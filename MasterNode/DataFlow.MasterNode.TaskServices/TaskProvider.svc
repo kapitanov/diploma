@@ -1,0 +1,2 @@
+﻿<%@ ServiceHost Service="AISTek.DataFlow.MasterNode.Scheduler.TaskProvider"
+                Factory="AISTek.DataFlow.MasterNode.Core.Services.ServiceFactory" %>

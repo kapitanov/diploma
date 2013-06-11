@@ -1,0 +1,2 @@
+﻿<%@ ServiceHost Service="AISTek.DataFlow.MasterNode.Repository.RepositoryService"
+                Factory="AISTek.DataFlow.MasterNode.Core.Services.ServiceFactory" %>

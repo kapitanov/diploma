@@ -1,0 +1,70 @@
+﻿<Window x:Class="DataFlow.ComputeNode.TraceViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AISTek DataFlow Log viewer"
+        Height="350"
+        Width="689">
+    <Window.Resources>
+        <ResourceDictionary Source="Templates.xaml" />
+    </Window.Resources>
+    <Grid>
+        <Grid Grid.Row="0"
+              Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="48" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0">
+                <StackPanel Orientation="Horizontal"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center">
+                    <TextBlock FontSize="24pt"
+                               FontWeight="Bold">
+                        Debug log:
+                    </TextBlock>
+                    <Button Click="Button_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Refresh.png" />
+                            <!--<TextBlock FontSize="14pt">Update</TextBlock>-->
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Border>
+
+            <FlowDocumentReader Grid.Row="1"
+                                IsPageViewEnabled="False"
+                                IsPrintEnabled="False"
+                                IsTwoPageViewEnabled="False"
+                                ViewingMode="Scroll"
+                                IsScrollViewEnabled="True">
+                <FlowDocument FontFamily="Consolas">
+                    <Table CellSpacing="0">
+                        <Table.Columns>
+                            <TableColumn Width="120" />
+                            <TableColumn Width="Auto" />
+                        </Table.Columns>
+                        <Table.RowGroups>
+                            <TableRowGroup x:Name="dataRows">
+                                <TableRow>
+                                    <TableCell ColumnSpan="2">
+                                        <Paragraph>
+                                            No data has been fetched yet. Press
+                                            <Hyperlink Click="Button_Click">Update</Hyperlink> to load data.
+                                        </Paragraph>
+                                    </TableCell>
+                                </TableRow>
+                            </TableRowGroup>
+                        </Table.RowGroups>
+                    </Table>
+                </FlowDocument>
+            </FlowDocumentReader>
+        </Grid>
+        <Label x:Name="waiter"
+               Grid.Row="0"
+               Grid.Column="0"
+               Template="{DynamicResource ResourceKey=WaitScreen}"
+               Opacity="0.75"
+               Visibility="Hidden" />
+    </Grid>
+</Window>

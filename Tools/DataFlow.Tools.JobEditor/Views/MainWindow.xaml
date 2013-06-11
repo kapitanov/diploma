@@ -1,0 +1,134 @@
+﻿<Ribbon:RibbonWindow xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:Ribbon="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"
+                     xmlns:Controls="clr-namespace:WPFExtensions.Controls;assembly=WPFExtensions"
+                     xmlns:ViewModel="clr-namespace:AISTek.DataFlow.Tools.JobEditor.ViewModel"
+                     Background="White"
+                     Title=""
+                     x:Class="AISTek.DataFlow.Tools.JobEditor.Views.MainWindow"
+                     Height="345"
+                     Width="900"
+                     ResizeMode="CanResizeWithGrip">
+    <DockPanel LastChildFill="True">
+
+        <Ribbon:Ribbon DockPanel.Dock="Top"
+                       Background="Red"
+                       Title="AISTek DataFlow Job Editor">
+            <Ribbon:Ribbon.Resources>
+
+                <Ribbon:RibbonCommand x:Key="RibbonCommandNewJob"
+                                      LabelTitle="New job"
+                                      LabelDescription="Create new empty job"
+                                      SmallImageSource="..\Resources\NewJob.png"
+                                      LargeImageSource="..\Resources\NewJob.png"
+                                      Executed="NewJob" />
+                <Ribbon:RibbonCommand x:Key="RibbonCommandOpenJob"
+                                      LabelTitle="Open job"
+                                      LabelDescription="Open a saved job"
+                                      SmallImageSource="..\Resources\OpenJob.png"
+                                      LargeImageSource="..\Resources\OpenJob.png"
+                                      Executed="OpenJob" />
+                <Ribbon:RibbonCommand x:Key="RibbonCommandSaveJob"
+                                      LabelTitle="Save job"
+                                      LabelDescription="Save job into a file"
+                                      SmallImageSource="..\Resources\SaveJob.png"
+                                      LargeImageSource="..\Resources\SaveJob.png"
+                                      Executed="SaveJob" />
+                <Ribbon:RibbonCommand x:Key="RibbonCommandSaveJobAs"
+                                      LabelTitle="Save job as"
+                                      LabelDescription="Save job into a file with specified name"
+                                      SmallImageSource="..\Resources\SaveJobAs.png"
+                                      LargeImageSource="..\Resources\SaveJobAs.png"
+                                      Executed="SaveJobAs"/>
+
+
+
+                <Ribbon:RibbonCommand x:Key="RibbonCommandAddTask"
+                                      LabelTitle="Add task"
+                                      LabelDescription="Add a new task into current job"
+                                      SmallImageSource="..\Resources\NewTask.png"
+                                      LargeImageSource="..\Resources\NewTask.png"
+                                      Executed="AddTask" />
+                <Ribbon:RibbonCommand x:Key="RibbonCommandEditJobName"
+                                      LabelTitle="Edit..."
+                                      LabelDescription="Edit job's name"
+                                      SmallImageSource="..\Resources\EditJobName.png"
+                                      LargeImageSource="..\Resources\EditJobName.png"
+                                      Executed="EditJobName" />
+                <Ribbon:RibbonCommand x:Key="RibbonCommandExecuteJob"
+                                      LabelTitle="Execute job"
+                                      LabelDescription="Start job execution"
+                                      SmallImageSource="..\Resources\Run.png"
+                                      LargeImageSource="..\Resources\Run.png"
+                                      Executed="ExecuteJob" />
+                <Ribbon:RibbonCommand x:Key="RibbonCommandClose"
+                                      LabelTitle="Close"
+                                      LabelDescription="Close application"
+                                      SmallImageSource="..\Resources\Exit.png"
+                                      LargeImageSource="..\Resources\Exit.png"
+                                      Executed="Exit" />
+            </Ribbon:Ribbon.Resources>
+
+
+            <Ribbon:Ribbon.ApplicationMenu>
+                <Ribbon:RibbonApplicationMenu>
+                    <Ribbon:RibbonApplicationMenuItem Command="{StaticResource ResourceKey=RibbonCommandNewJob}" />
+                    <Ribbon:RibbonApplicationMenuItem Command="{StaticResource ResourceKey=RibbonCommandOpenJob}" />
+                    <Ribbon:RibbonApplicationMenuItem Command="{StaticResource ResourceKey=RibbonCommandSaveJob}" />
+                    <Ribbon:RibbonApplicationMenuItem Command="{StaticResource ResourceKey=RibbonCommandSaveJobAs}" />
+                    <Ribbon:RibbonSeparator />
+                    <Ribbon:RibbonApplicationMenuItem Command="{StaticResource ResourceKey=RibbonCommandClose}" />
+                </Ribbon:RibbonApplicationMenu>
+            </Ribbon:Ribbon.ApplicationMenu>
+
+            <Ribbon:RibbonTab Label="Job">
+                <Ribbon:RibbonGroup>
+                    <Ribbon:RibbonGroup.Command>
+                        <Ribbon:RibbonCommand LabelTitle="Actions" />
+                    </Ribbon:RibbonGroup.Command>
+                    <Ribbon:RibbonButton Command="{StaticResource ResourceKey=RibbonCommandNewJob}" />
+                    <Ribbon:RibbonButton Command="{StaticResource ResourceKey=RibbonCommandOpenJob}" />
+                    <Ribbon:RibbonButton Command="{StaticResource ResourceKey=RibbonCommandSaveJob}" />
+                    <Ribbon:RibbonButton Command="{StaticResource ResourceKey=RibbonCommandSaveJobAs}" />
+                </Ribbon:RibbonGroup>
+                <Ribbon:RibbonGroup>
+                    <Ribbon:RibbonGroup.Command>
+                        <Ribbon:RibbonCommand LabelTitle="Job name" />
+                    </Ribbon:RibbonGroup.Command>
+                    <Ribbon:RibbonTextBox x:Name="textBoxJobName"
+                                          Width="128"
+                                          IsReadOnly="True" />
+                    <Ribbon:RibbonButton Command="{StaticResource ResourceKey=RibbonCommandEditJobName}" />
+                </Ribbon:RibbonGroup>
+                <Ribbon:RibbonGroup>
+                    <Ribbon:RibbonGroup.Command>
+                        <Ribbon:RibbonCommand LabelTitle="Job GUID" />
+                    </Ribbon:RibbonGroup.Command>
+                    <Ribbon:RibbonLabel x:Name="labelJobGuid">GUID is not assigned yet.</Ribbon:RibbonLabel>
+                </Ribbon:RibbonGroup>
+            </Ribbon:RibbonTab>
+
+            <Ribbon:RibbonTab Label="Task">
+                <Ribbon:RibbonGroup>
+                    <Ribbon:RibbonGroup.Command>
+                        <Ribbon:RibbonCommand LabelTitle="Actions" />
+                    </Ribbon:RibbonGroup.Command>
+                    <Ribbon:RibbonButton Command="{StaticResource ResourceKey=RibbonCommandAddTask}" />
+                </Ribbon:RibbonGroup>
+            </Ribbon:RibbonTab>
+
+            <Ribbon:RibbonTab Label="Execute">
+                <Ribbon:RibbonGroup>
+                    <Ribbon:RibbonGroup.Command>
+                        <Ribbon:RibbonCommand LabelTitle="Actions" />
+                    </Ribbon:RibbonGroup.Command>
+                    <Ribbon:RibbonButton Command="{StaticResource ResourceKey=RibbonCommandExecuteJob}" />
+                </Ribbon:RibbonGroup>
+            </Ribbon:RibbonTab>
+        </Ribbon:Ribbon>
+
+        <Controls:ZoomControl>
+            <ViewModel:JobGraphLayout x:Name="graphLayout" />
+        </Controls:ZoomControl>
+    </DockPanel>
+</Ribbon:RibbonWindow>

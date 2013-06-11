@@ -1,0 +1,54 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:DataModel="clr-namespace:AISTek.DataFlow.Tools.JobEditor.DataModel">
+    <DataTemplate x:Key="TaskRequestTemplate"
+                  DataType="{x:Type DataModel:TaskRequest}">
+        <ContentControl Style="{DynamicResource ResourceKey=ListBoxItemOutline}"
+                        Width="{Binding Path=Width, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListBoxItem}}}">
+            <TextBlock Text="{Binding Path=Name}" />
+        </ContentControl>
+    </DataTemplate>
+
+    <DataTemplate x:Key="FileRequestTemplate"
+                  DataType="{x:Type DataModel:FileRequest}">
+        <TextBlock Text="{Binding Path=Name}" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="CreateFileTemplate">
+        <StackPanel Orientation="Horizontal">
+            <Image Source="..\Resources\NewFileIcon.png" />
+            <TextBlock Text="{Binding Path=Name}"
+                       VerticalAlignment="Center" />
+        </StackPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="UploadFileTemplate">
+        <StackPanel Orientation="Horizontal">
+            <Image Source="..\Resources\UploadFileIcon.png" />
+            <TextBlock Text="{Binding Path=Name}"
+                       VerticalAlignment="Center" />
+        </StackPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="TaskTypeTemplate">
+        <StackPanel Orientation="Horizontal">
+            <Image Source="Class.png" />
+            <TextBlock Text="{Binding Path=FullName}"
+                       VerticalAlignment="Center" />
+        </StackPanel>
+    </DataTemplate>
+
+    <DataModel:StageIconConvertor x:Key="StageIconConvertor" />
+
+    <DataTemplate x:Key="StageTemplate">
+        <StackPanel Orientation="Horizontal">
+            <Image Source="{Binding Path=State, Converter={StaticResource ResourceKey=StageIconConvertor}}"
+                   Width="32"
+                   Height="32" />
+            <TextBlock Text="{Binding Path=Name}"
+                       VerticalAlignment="Center" />
+        </StackPanel>
+    </DataTemplate>
+
+    
+</ResourceDictionary>

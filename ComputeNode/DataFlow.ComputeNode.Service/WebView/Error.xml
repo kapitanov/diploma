@@ -1,0 +1,27 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:view="http://aistek.dataflow/computeNode/webInterface">
+  <head>
+    <title>
+      AISTek DataFlow ComputeNode
+    </title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="Css" />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="header">
+        AISTek DataFlow ComputeNode
+      </div>
+      <div class="inner">
+        <p>
+          <span class="label">Error!</span>
+          <br />
+          <span class="error">
+            <view:message />
+          </span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

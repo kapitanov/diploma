@@ -1,0 +1,926 @@
+*/bin/*
+*.vs10x
+**/bin/**
+**/bin/*
+*/bin
+ComputeNode/**/bin
+ComputeNode/**/obj
+ComputeNode/Setup/**/bin
+ComputeNode/Setup/**/obj
+ComputeNode/Tests/**/bin
+ComputeNode/Tests/**/obj
+DevSamples/**/bin
+DevSamples/**/obj
+MasterNode/**/bin
+MasterNode/**/obj
+MasterNode/Tests/**/bin
+MasterNode/Tests/**/obj
+Shared/**/bin
+Shared/**/obj
+Testing tools/**/bin
+Testing tools/**/obj
+Tools/**/bin
+Tools/**/obj
+Util/**/bin
+Util/**/obj
+_ReSharper.DataFlow/
+*.msi
+*.exe
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/ComputeNode (Debug)/DataFlow.ComputeNode.CnEmulator.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/ComputeNode (Debug)/DataFlow.PresentationExtensions.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/ComputeNode (Debug)/DataFlow.PresentationExtensions.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/ComputeNode (Debug)/DataFlow.Shared.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/ComputeNode (Debug)/DataFlow.Shared.Classes.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/ComputeNode (Debug)/DataFlow.Shared.Client.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/ComputeNode (Debug)/DataFlow.Shared.Client.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/ComputeNode (Debug)/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/DataFlow.ComputeNode.CnEmulator.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/DataFlow.PerfomanceToolkit.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/DataFlow.PresentationExtensions.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/DataFlow.PresentationExtensions.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/DataFlow.Shared.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/DataFlow.Shared.Classes.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/DataFlow.Shared.Client.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/DataFlow.Shared.Client.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/DataFlow.Util.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/System.Windows.Interactivity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/System.Windows.Interactivity.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug, No CCR/en/System.Windows.Interactivity.resources.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug/DataFlow.ComputeNode.CnEmulator.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug/DataFlow.ComputeNode.CnEmulator.vshost.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug/DataFlow.PresentationExtensions.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug/DataFlow.PresentationExtensions.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug/DataFlow.Shared.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug/DataFlow.Shared.Classes.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug/DataFlow.Shared.Client.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug/DataFlow.Shared.Client.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug/System.Windows.Interactivity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug/System.Windows.Interactivity.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Debug/en/System.Windows.Interactivity.resources.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/DataFlow.ComputeNode.CnEmulator.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/DataFlow.PerfomanceToolkit.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/DataFlow.PresentationExtensions.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/DataFlow.Shared.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/DataFlow.Shared.Client.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/System.Windows.Interactivity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/System.Windows.Interactivity.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release, No CCR/en/System.Windows.Interactivity.resources.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release/DataFlow.ComputeNode.CnEmulator.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release/DataFlow.PresentationExtensions.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release/DataFlow.Shared.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/bin/Release/DataFlow.Shared.Client.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/AISTek.DataFlow.ComputeNode.CnEmulator.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/DataFlow.ComputeNode.CnEmulator.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/DataFlow.ComputeNode.CnEmulator.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/TempPE/Service References.TaskProvider.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/ComputeNode (Debug)/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/AISTek.DataFlow.ComputeNode.CnEmulator.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/App.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/DataFlow.ComputeNode.CnEmulator.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/DataFlow.ComputeNode.CnEmulator.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/MainWindow.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug, No CCR/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/AISTek.DataFlow.ComputeNode.CnEmulator.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/DataFlow.ComputeNode.CnEmulator.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/DataFlow.ComputeNode.CnEmulator.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/TempPE/Service References.ServiceReference1.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/TempPE/Service References.TaskProvider.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/TempPE/Service References.Tasks.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Debug/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release, No CCR/AISTek.DataFlow.ComputeNode.CnEmulator.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release, No CCR/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release, No CCR/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release, No CCR/DataFlow.ComputeNode.CnEmulator.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release, No CCR/DataFlow.ComputeNode.CnEmulator.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release, No CCR/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release, No CCR/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release, No CCR/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release, No CCR/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release, No CCR/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release, No CCR/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release/AISTek.DataFlow.ComputeNode.CnEmulator.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release/DataFlow.ComputeNode.CnEmulator.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release/DataFlow.ComputeNode.CnEmulator.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/Release/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/ComputeNode (Debug)/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/ComputeNode (Debug)/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/ComputeNode (Debug)/DataFlow.ComputeNode.CnEmulator.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/ComputeNode (Debug)/DataFlow.ComputeNode.CnEmulator.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/ComputeNode (Debug)/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/ComputeNode (Debug)/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/ComputeNode (Debug)/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/ComputeNode (Debug)/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/ComputeNode (Debug)/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/ComputeNode (Debug)/TempPE/Service References.TaskProvider.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/ComputeNode (Debug)/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/ComputeNode (Debug)/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Debug/AISTek.DataFlow.ComputeNode.CnEmulator.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Debug/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Debug/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Debug/DataFlow.ComputeNode.CnEmulator.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Debug/DataFlow.ComputeNode.CnEmulator.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Debug/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Debug/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Debug/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Debug/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Debug/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Debug/TempPE/Service References.Tasks.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Debug/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Release/AISTek.DataFlow.ComputeNode.CnEmulator.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Release/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Release/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Release/DataFlow.ComputeNode.CnEmulator.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Release/DataFlow.ComputeNode.CnEmulator.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Release/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Release/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Release/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Release/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Release/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Release/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.CnEmulator/obj/x86/Release/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/DataFlow.ComputeNode.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/DataFlow.ComputeNode.Classes.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/DataFlow.ComputeNode.Engine.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/DataFlow.ComputeNode.Engine.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/DataFlow.ComputeNode.GeneralEngineTestHarness.XML
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/DataFlow.Shared.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/DataFlow.Shared.Classes.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/DataFlow.Util.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/GE.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/ComputeNode (Debug)/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/DataFlow.ComputeNode.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/DataFlow.ComputeNode.Classes.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/DataFlow.ComputeNode.Engine.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/DataFlow.ComputeNode.Engine.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/DataFlow.ComputeNode.GeneralEngineTestHarness.XML
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/DataFlow.PerfomanceToolkit.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/DataFlow.Shared.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/DataFlow.Shared.Classes.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/DataFlow.Util.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug, No CCR/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/DataFlow.ComputeNode.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/DataFlow.ComputeNode.Classes.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/DataFlow.ComputeNode.Engine.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/DataFlow.ComputeNode.Engine.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/DataFlow.ComputeNode.GeneralEngineTestHarness.XML
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/DataFlow.ComputeNode.GeneralEngineTestHarness.vshost.exe.manifest
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/DataFlow.Shared.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/DataFlow.Shared.Classes.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/DataFlow.Util.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Debug/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Release, No CCR/DataFlow.ComputeNode.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Release, No CCR/DataFlow.ComputeNode.Engine.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Release, No CCR/DataFlow.PerfomanceToolkit.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Release, No CCR/DataFlow.Shared.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Release, No CCR/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Release, No CCR/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Release, No CCR/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/bin/Release, No CCR/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/obj/ComputeNode (Debug)/DataFlow.ComputeNode.GeneralEngineTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/obj/ComputeNode (Debug)/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/obj/Debug, No CCR/DataFlow.ComputeNode.GeneralEngineTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/obj/Debug/DataFlow.ComputeNode.GeneralEngineTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/obj/Release, No CCR/DataFlow.ComputeNode.GeneralEngineTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/obj/x86/ComputeNode (Debug)/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/obj/x86/Debug/DataFlow.ComputeNode.GeneralEngineTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/obj/x86/Debug/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.GeneralEngineTestHarness/obj/x86/Release/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/System.Windows.Interactivity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/System.Windows.Interactivity.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/en/System.Windows.Interactivity.resources.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/DataFlow.ComputeNode.ServiceTestHarness.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/DataFlow.PresentationExtensions.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/DataFlow.PresentationExtensions.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/DataFlow.Shared.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/DataFlow.Shared.Classes.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/DataFlow.Shared.Client.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/DataFlow.Shared.Client.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/DataFlow.Util.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/System.Windows.Interactivity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/System.Windows.Interactivity.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug/en/System.Windows.Interactivity.resources.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/DataFlow.ComputeNode.ServiceTestHarness.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/DataFlow.PerfomanceToolkit.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/DataFlow.PresentationExtensions.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/DataFlow.Shared.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/DataFlow.Shared.Client.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/System.Windows.Interactivity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/System.Windows.Interactivity.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Release, No CCR/en/System.Windows.Interactivity.resources.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/AISTek.DataFlow.ComputeNode.ServiceTestHarness.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/DataFlow.ComputeNode.ServiceTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/DataFlow.ComputeNode.ServiceTestHarness.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/ErrorView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/ErrorView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/JobView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/JobView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/RepositoryView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/RepositoryView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/StatusView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/StatusView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/TaskView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/TaskView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/WaitScreen.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/WaitScreen.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/ComputeNode (Debug)/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/AISTek.DataFlow.ComputeNode.ServiceTestHarness.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/App.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/DataFlow.ComputeNode.ServiceTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/DataFlow.ComputeNode.ServiceTestHarness.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/ErrorView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/ErrorView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/ErrorView.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/JobView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/JobView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/JobView.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/MainWindow.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/RepositoryView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/RepositoryView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/RepositoryView.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/StatusView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/StatusView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/StatusView.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/TaskView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/TaskView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/TaskView.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/WaitScreen.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/WaitScreen.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug, No CCR/WaitScreen.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/AISTek.DataFlow.ComputeNode.ServiceTestHarness.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/DataFlow.ComputeNode.ServiceTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/DataFlow.ComputeNode.ServiceTestHarness.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/ErrorView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/ErrorView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/JobView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/JobView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/RepositoryView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/RepositoryView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/StatusView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/StatusView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/TaskView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/TaskView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/TempPE/Service References.Jobs.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/TempPE/Service References.Repository.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/TempPE/Service References.Services.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/WaitScreen.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/WaitScreen.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Debug/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/AISTek.DataFlow.ComputeNode.ServiceTestHarness.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/DataFlow.ComputeNode.ServiceTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/DataFlow.ComputeNode.ServiceTestHarness.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/ErrorView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/ErrorView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/JobView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/JobView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/RepositoryView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/RepositoryView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/StatusView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/StatusView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/TaskView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/TaskView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/WaitScreen.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release, No CCR/WaitScreen.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/AISTek.DataFlow.ComputeNode.ServiceTestHarness.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/DataFlow.ComputeNode.ServiceTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/DataFlow.ComputeNode.ServiceTestHarness.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/DataFlow.ComputeNode.ServiceTestHarness_MarkupCompile.lref
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/ErrorView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/ErrorView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/GeneratedInternalTypeHelper.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/JobView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/JobView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/RepositoryView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/RepositoryView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/StatusView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/StatusView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/TaskView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/TaskView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/WaitScreen.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/Release/WaitScreen.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/DataFlow.ComputeNode.ServiceTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/DataFlow.ComputeNode.ServiceTestHarness.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/ErrorView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/ErrorView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/JobView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/JobView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/RepositoryView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/RepositoryView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/StatusView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/StatusView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/TaskView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/TaskView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/WaitScreen.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/WaitScreen.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/ComputeNode (Debug)/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/AISTek.DataFlow.ComputeNode.ServceTestHarness.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/AISTek.DataFlow.ComputeNode.ServiceTest.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/AISTek.DataFlow.ComputeNode.ServiceTestHarness.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/DataFlow.ComputeNode.ServceTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/DataFlow.ComputeNode.ServceTestHarness.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/DataFlow.ComputeNode.ServceTestHarness_MarkupCompile.lref
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/DataFlow.ComputeNode.ServiceTest.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/DataFlow.ComputeNode.ServiceTest.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/DataFlow.ComputeNode.ServiceTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/DataFlow.ComputeNode.ServiceTestHarness.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/DataFlow.ComputeNode.ServiceTestHarness_MarkupCompile.lref
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/DataFlow.ComputeNode.ServiceTest_MarkupCompile.lref
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/ErrorView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/ErrorView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/GeneratedInternalTypeHelper.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/JobView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/JobView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/RepositoryView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/RepositoryView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/StatusView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/StatusView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/TaskView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/TaskView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/TempPE/Service References.Jobs.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/TempPE/Service References.Services.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/WaitScreen.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Debug/WaitScreen.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/AISTek.DataFlow.ComputeNode.ServiceTestHarness.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/App.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/DataFlow.ComputeNode.ServiceTestHarness.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/DataFlow.ComputeNode.ServiceTestHarness.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/DataFlow.ComputeNode.ServiceTestHarness_MarkupCompile.lref
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/ErrorView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/ErrorView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/GeneratedInternalTypeHelper.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/JobView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/JobView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/RepositoryView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/RepositoryView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/ResGen.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/ResGen.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/StatusView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/StatusView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/TaskView.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/TaskView.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/WaitScreen.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/WaitScreen.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/obj/x86/Release/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/DataFlow.ComputeNode.ServiceTestHarness.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/DataFlow.PerfomanceToolkit.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/DataFlow.PresentationExtensions.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/DataFlow.PresentationExtensions.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/DataFlow.Shared.Classes.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/DataFlow.Shared.Classes.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/DataFlow.Shared.Client.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/DataFlow.Shared.Client.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/DataFlow.Util.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.ServceTestHarness/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/ComputeNode (Debug)/DataFlow.ComputeNode.TraceViewer.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/ComputeNode (Debug)/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/ComputeNode (Debug)/DataFlow.Util.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/ComputeNode (Debug)/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/ComputeNode (Debug)/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/ComputeNode (Debug)/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug, No CCR/DataFlow.ComputeNode.TraceViewer.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug, No CCR/DataFlow.PerfomanceToolkit.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug, No CCR/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug, No CCR/DataFlow.Util.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug, No CCR/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug, No CCR/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug, No CCR/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug/DataFlow.ComputeNode.TraceViewer.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug/DataFlow.ComputeNode.TraceViewer.vshost.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug/DataFlow.ComputeNode.TraceViewer.vshost.exe.manifest
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug/DataFlow.Util.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Debug/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release, No CCR/DataFlow.ComputeNode.TraceViewer.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release, No CCR/DataFlow.PerfomanceToolkit.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release, No CCR/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release, No CCR/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release, No CCR/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release, No CCR/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release/DataFlow.ComputeNode.TraceViewer.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/Release/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/x86/ComputeNode (Debug)/DataFlow.ComputeNode.TraceViewer.exe.config
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/x86/ComputeNode (Debug)/DataFlow.Util.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/x86/ComputeNode (Debug)/DataFlow.Util.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/x86/ComputeNode (Debug)/Microsoft.Contracts.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/x86/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Common.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/x86/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Common.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/x86/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/x86/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/x86/ComputeNode (Debug)/Microsoft.Practices.ObjectBuilder2.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/bin/x86/ComputeNode (Debug)/Microsoft.Practices.Unity.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/App.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/DataFlow.ComputeNode.TraceViewer.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/DataFlow.ComputeNode.TraceViewer.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/DataFlow.ComputeNode.TraceViewer.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/GenerateResource.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/GenerateResource.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/MainWindow.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/ComputeNode (Debug)/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/App.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/DataFlow.ComputeNode.TraceViewer.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/DataFlow.ComputeNode.TraceViewer.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/DataFlow.ComputeNode.TraceViewer.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/GenerateResource.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/GenerateResource.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/MainWindow.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug, No CCR/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/App.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/DataFlow.ComputeNode.TraceViewer.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/DataFlow.ComputeNode.TraceViewer.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/DataFlow.ComputeNode.TraceViewer.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/GenerateResource.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/GenerateResource.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/MainWindow.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Debug/build.force
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/App.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/DataFlow.ComputeNode.TraceViewer.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/DataFlow.ComputeNode.TraceViewer.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/DataFlow.ComputeNode.TraceViewer.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/GenerateResource.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/GenerateResource.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/MainWindow.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release, No CCR/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release/DataFlow.ComputeNode.TraceViewer.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release/DataFlow.ComputeNode.TraceViewer.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release/DataFlow.ComputeNode.TraceViewer.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release/GenerateResource.read.126.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release/GenerateResource.write.126.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/Release/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/ComputeNode (Debug)/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/ComputeNode (Debug)/DataFlow.ComputeNode.TraceViewer.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/ComputeNode (Debug)/DataFlow.ComputeNode.TraceViewer.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/ComputeNode (Debug)/DataFlow.ComputeNode.TraceViewer.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/ComputeNode (Debug)/GenerateResource.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/ComputeNode (Debug)/GenerateResource.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/ComputeNode (Debug)/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/ComputeNode (Debug)/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/ComputeNode (Debug)/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/ComputeNode (Debug)/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/ComputeNode (Debug)/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Debug/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Debug/DataFlow.ComputeNode.TraceViewer.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Debug/DataFlow.ComputeNode.TraceViewer.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Debug/DataFlow.ComputeNode.TraceViewer.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Debug/GenerateResource.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Debug/GenerateResource.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Debug/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Debug/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Debug/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Debug/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Debug/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/App.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/App.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/DataFlow.ComputeNode.TraceViewer.Properties.Resources.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/DataFlow.ComputeNode.TraceViewer.csproj.FileListAbsolute.txt
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/DataFlow.ComputeNode.TraceViewer.g.resources
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/GenerateResource.read.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/GenerateResource.write.1.tlog
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/MainWindow.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/MainWindow.g.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/MainWindow.g.i.cs
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/TempPE/Properties.Resources.Designer.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/TempPE/Service References.Status.Reference.cs.dll
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/Templates.baml
+ComputeNode/Tests/Test harness/DataFlow.ComputeNode.TraceViewer/obj/x86/Release/build.force
+MasterNode/Setup/DataFlow.MasterNode.Setup.Base/bin/Debug, No CCR/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Base/bin/Debug/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Base/bin/Release, No CCR/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Base/obj/Debug, No CCR/DataFlow.MasterNode.Setup.Base.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.Base/obj/Debug, No CCR/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Base/obj/Debug/DataFlow.MasterNode.Setup.Base.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.Base/obj/Debug/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Base/obj/Release, No CCR/DataFlow.MasterNode.Setup.Base.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.Base/obj/Release, No CCR/DataFlow.MasterNode.Setup.Base.dll
+*.sdf
+*.vsp
+Util/Tests/DataFlow.Util.Tests/bin/ComputeNode (Debug)/DataFlow.Util.Tests.dll
+Util/Tests/DataFlow.Util.Tests/bin/ComputeNode (Debug)/DataFlow.Util.dll
+Util/Tests/DataFlow.Util.Tests/bin/ComputeNode (Debug)/DataFlow.Util.xml
+Util/Tests/DataFlow.Util.Tests/bin/ComputeNode (Debug)/Microsoft.Contracts.dll
+Util/Tests/DataFlow.Util.Tests/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Common.dll
+Util/Tests/DataFlow.Util.Tests/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Common.xml
+Util/Tests/DataFlow.Util.Tests/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+Util/Tests/DataFlow.Util.Tests/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+Util/Tests/DataFlow.Util.Tests/bin/ComputeNode (Debug)/Microsoft.Practices.ObjectBuilder2.dll
+Util/Tests/DataFlow.Util.Tests/bin/ComputeNode (Debug)/Microsoft.Practices.Unity.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug, No CCR/DataFlow.PerfomanceToolkit.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug, No CCR/DataFlow.Util.Tests.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug, No CCR/DataFlow.Util.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug, No CCR/DataFlow.Util.xml
+Util/Tests/DataFlow.Util.Tests/bin/Debug, No CCR/Microsoft.Contracts.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug/DataFlow.Util.Tests.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug/DataFlow.Util.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug/DataFlow.Util.xml
+Util/Tests/DataFlow.Util.Tests/bin/Debug/Microsoft.Contracts.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Common.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Common.xml
+Util/Tests/DataFlow.Util.Tests/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+Util/Tests/DataFlow.Util.Tests/bin/Debug/Microsoft.Practices.ObjectBuilder2.dll
+Util/Tests/DataFlow.Util.Tests/bin/Debug/Microsoft.Practices.Unity.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release, No CCR/DataFlow.PerfomanceToolkit.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release, No CCR/DataFlow.Util.Tests.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release, No CCR/DataFlow.Util.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release, No CCR/Microsoft.Contracts.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.xml
+Util/Tests/DataFlow.Util.Tests/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+Util/Tests/DataFlow.Util.Tests/bin/Release, No CCR/Microsoft.Practices.ObjectBuilder2.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release, No CCR/Microsoft.Practices.Unity.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release/DataFlow.Util.Tests.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release/DataFlow.Util.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release/Microsoft.Contracts.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release/Microsoft.Practices.EnterpriseLibrary.Common.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release/Microsoft.Practices.EnterpriseLibrary.Common.xml
+Util/Tests/DataFlow.Util.Tests/bin/Release/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+Util/Tests/DataFlow.Util.Tests/bin/Release/Microsoft.Practices.ObjectBuilder2.dll
+Util/Tests/DataFlow.Util.Tests/bin/Release/Microsoft.Practices.Unity.dll
+Util/Tests/DataFlow.Util.Tests/obj/ComputeNode (Debug)/DataFlow.Util.Tests.csproj.FileListAbsolute.txt
+Util/Tests/DataFlow.Util.Tests/obj/ComputeNode (Debug)/DataFlow.Util.Tests.dll
+Util/Tests/DataFlow.Util.Tests/obj/ComputeNode (Debug)/build.force
+Util/Tests/DataFlow.Util.Tests/obj/Debug, No CCR/DataFlow.Util.Tests.csproj.FileListAbsolute.txt
+Util/Tests/DataFlow.Util.Tests/obj/Debug, No CCR/DataFlow.Util.Tests.dll
+Util/Tests/DataFlow.Util.Tests/obj/Debug/DataFlow.Util.Tests.csproj.FileListAbsolute.txt
+Util/Tests/DataFlow.Util.Tests/obj/Debug/DataFlow.Util.Tests.dll
+Util/Tests/DataFlow.Util.Tests/obj/Debug/build.force
+Util/Tests/DataFlow.Util.Tests/obj/Release, No CCR/DataFlow.Util.Tests.csproj.FileListAbsolute.txt
+Util/Tests/DataFlow.Util.Tests/obj/Release, No CCR/DataFlow.Util.Tests.dll
+Util/Tests/DataFlow.Util.Tests/obj/Release/DataFlow.Util.Tests.csproj.FileListAbsolute.txt
+Util/Tests/DataFlow.Util.Tests/obj/Release/DataFlow.Util.Tests.dll
+Util/Tests/DataFlow.Util.Tests/obj/Release/build.force
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/DataFlow.Threading.Tests.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/DataFlow.Threading.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/DataFlow.Threading.xml
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/DataFlow.Threading_Accessor.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/DataFlow.Util.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/DataFlow.Util.xml
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/EQT_6953c0b4-738e-4182-a54e-1706b4911459/DataFlow.Threading.Tests.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/EQT_6953c0b4-738e-4182-a54e-1706b4911459/DataFlow.Threading.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/EQT_6953c0b4-738e-4182-a54e-1706b4911459/DataFlow.Util.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/Microsoft.Contracts.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Common.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Common.xml
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/Microsoft.Practices.ObjectBuilder2.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/Microsoft.Practices.Unity.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/UnitTestUtils.dll
+Util/Tests/DataFlow.Threading.Tests/bin/ComputeNode (Debug)/eqtrestore_6953c0b4-738e-4182-a54e-1706b4911459.bat
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/DataFlow.PerfomanceToolkit.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/DataFlow.Threading.Tests.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/DataFlow.Threading.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/DataFlow.Threading.xml
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/DataFlow.Threading_Accessor.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/DataFlow.Util.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/DataFlow.Util.xml
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/Microsoft.Contracts.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.xml
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/Microsoft.Practices.ObjectBuilder2.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/Microsoft.Practices.Unity.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug, No CCR/UnitTestUtils.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/DataFlow.Threading.Tests.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/DataFlow.Threading.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/DataFlow.Threading.xml
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/DataFlow.Threading_Accessor.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/DataFlow.Util.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/DataFlow.Util.xml
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/Microsoft.Contracts.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Common.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Common.xml
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/Microsoft.Practices.ObjectBuilder2.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/Microsoft.Practices.Unity.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Debug/UnitTestUtils.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/DataFlow.PerfomanceToolkit.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/DataFlow.Threading.Tests.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/DataFlow.Threading.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/DataFlow.Threading_Accessor.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/DataFlow.Util.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/Microsoft.Contracts.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Common.xml
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/Microsoft.Practices.ObjectBuilder2.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/Microsoft.Practices.Unity.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release, No CCR/UnitTestUtils.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release/DataFlow.Threading.Tests.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release/DataFlow.Threading.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release/DataFlow.Threading_Accessor.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release/DataFlow.Util.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release/Microsoft.Contracts.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release/Microsoft.Practices.EnterpriseLibrary.Common.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release/Microsoft.Practices.EnterpriseLibrary.Common.xml
+Util/Tests/DataFlow.Threading.Tests/bin/Release/Microsoft.Practices.EnterpriseLibrary.Logging.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release/Microsoft.Practices.EnterpriseLibrary.Logging.xml
+Util/Tests/DataFlow.Threading.Tests/bin/Release/Microsoft.Practices.ObjectBuilder2.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release/Microsoft.Practices.Unity.dll
+Util/Tests/DataFlow.Threading.Tests/bin/Release/UnitTestUtils.dll
+Util/Tests/DataFlow.Threading.Tests/obj/ComputeNode (Debug)/DataFlow.Threading.Tests.csproj.FileListAbsolute.txt
+Util/Tests/DataFlow.Threading.Tests/obj/ComputeNode (Debug)/DataFlow.Threading.Tests.dll
+Util/Tests/DataFlow.Threading.Tests/obj/ComputeNode (Debug)/DataFlow.Threading_Accessor.dll
+Util/Tests/DataFlow.Threading.Tests/obj/ComputeNode (Debug)/build.force
+Util/Tests/DataFlow.Threading.Tests/obj/Debug, No CCR/DataFlow.Threading.Tests.csproj.FileListAbsolute.txt
+Util/Tests/DataFlow.Threading.Tests/obj/Debug, No CCR/DataFlow.Threading.Tests.dll
+Util/Tests/DataFlow.Threading.Tests/obj/Debug, No CCR/DataFlow.Threading_Accessor.dll
+Util/Tests/DataFlow.Threading.Tests/obj/Debug/DataFlow.Threading.Tests.csproj.FileListAbsolute.txt
+Util/Tests/DataFlow.Threading.Tests/obj/Debug/DataFlow.Threading.Tests.dll
+Util/Tests/DataFlow.Threading.Tests/obj/Debug/DataFlow.Threading_Accessor.dll
+Util/Tests/DataFlow.Threading.Tests/obj/Debug/build.force
+Util/Tests/DataFlow.Threading.Tests/obj/Release, No CCR/DataFlow.Threading.Tests.csproj.FileListAbsolute.txt
+Util/Tests/DataFlow.Threading.Tests/obj/Release, No CCR/DataFlow.Threading.Tests.dll
+Util/Tests/DataFlow.Threading.Tests/obj/Release, No CCR/DataFlow.Threading_Accessor.dll
+Util/Tests/DataFlow.Threading.Tests/obj/Release/DataFlow.Threading.Tests.csproj.FileListAbsolute.txt
+Util/Tests/DataFlow.Threading.Tests/obj/Release/DataFlow.Threading.Tests.dll
+Util/Tests/DataFlow.Threading.Tests/obj/Release/DataFlow.Threading_Accessor.dll
+Util/Tests/DataFlow.Threading.Tests/obj/Release/build.force
+UpgradeLog.XML
+UpgradeLog.htm
+TestResults/
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/bin/Debug, No CCR/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/bin/Debug, No CCR/DataFlow.MasterNode.Setup.SqlDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/bin/Debug/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/bin/Debug/DataFlow.MasterNode.Setup.SqlDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/bin/Release, No CCR/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/bin/Release, No CCR/DataFlow.MasterNode.Setup.SqlDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/obj/Debug, No CCR/DataFlow.MasterNode.Setup.SqlDeploy.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/obj/Debug, No CCR/DataFlow.MasterNode.Setup.SqlDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/obj/Debug/DataFlow.MasterNode.Setup.SqlDeploy.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/obj/Debug/DataFlow.MasterNode.Setup.SqlDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/obj/Debug/build.force
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/obj/Release, No CCR/DataFlow.MasterNode.Setup.SqlDeploy.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/obj/Release, No CCR/DataFlow.MasterNode.Setup.SqlDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.SqlDeploy/obj/Release/build.force
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/bin/Debug, No CCR/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/bin/Debug, No CCR/DataFlow.MasterNode.Setup.IisDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/bin/Debug, No CCR/Microsoft.Web.Administration.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/bin/Debug/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/bin/Debug/DataFlow.MasterNode.Setup.IisDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/bin/Debug/Microsoft.Web.Administration.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/bin/Release, No CCR/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/bin/Release, No CCR/DataFlow.MasterNode.Setup.IisDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/bin/Release, No CCR/Microsoft.Web.Administration.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/obj/Debug, No CCR/DataFlow.MasterNode.Setup.IisDeploy.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/obj/Debug, No CCR/DataFlow.MasterNode.Setup.IisDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/obj/Debug/DataFlow.MasterNode.Setup.IisDeploy.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/obj/Debug/DataFlow.MasterNode.Setup.IisDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/obj/Debug/build.force
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/obj/Release, No CCR/DataFlow.MasterNode.Setup.IisDeploy.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/obj/Release, No CCR/DataFlow.MasterNode.Setup.IisDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.IisDeploy/obj/Release/build.force
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/bin/Debug, No CCR/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/bin/Debug, No CCR/DataFlow.MasterNode.Setup.EventLogDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/bin/Debug/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/bin/Debug/DataFlow.MasterNode.Setup.EventLogDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/bin/Release, No CCR/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/bin/Release, No CCR/DataFlow.MasterNode.Setup.EventLogDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/obj/Debug, No CCR/DataFlow.MasterNode.Setup.EventLogDeploy.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/obj/Debug, No CCR/DataFlow.MasterNode.Setup.EventLogDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/obj/Debug/DataFlow.MasterNode.Setup.EventLogDeploy.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/obj/Debug/DataFlow.MasterNode.Setup.EventLogDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/obj/Debug/build.force
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/obj/Release, No CCR/DataFlow.MasterNode.Setup.EventLogDeploy.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/obj/Release, No CCR/DataFlow.MasterNode.Setup.EventLogDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.EventLogDeploy/obj/Release/build.force
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Debug, No CCR/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Debug, No CCR/DataFlow.MasterNode.Setup.Deploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Debug, No CCR/DataFlow.MasterNode.Setup.EventLogDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Debug, No CCR/DataFlow.MasterNode.Setup.IisDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Debug, No CCR/DataFlow.MasterNode.Setup.SqlDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Debug/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Debug/DataFlow.MasterNode.Setup.Deploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Debug/DataFlow.MasterNode.Setup.EventLogDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Debug/DataFlow.MasterNode.Setup.IisDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Debug/DataFlow.MasterNode.Setup.SqlDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Release, No CCR/DataFlow.MasterNode.Setup.Base.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Release, No CCR/DataFlow.MasterNode.Setup.Deploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Release, No CCR/DataFlow.MasterNode.Setup.EventLogDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Release, No CCR/DataFlow.MasterNode.Setup.IisDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/bin/Release, No CCR/DataFlow.MasterNode.Setup.SqlDeploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/obj/Debug, No CCR/DataFlow.MasterNode.Setup.Deploy.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/obj/Debug, No CCR/DataFlow.MasterNode.Setup.Deploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/obj/Debug/DataFlow.MasterNode.Setup.Deploy.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/obj/Debug/DataFlow.MasterNode.Setup.Deploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/obj/Debug/build.force
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/obj/Release, No CCR/DataFlow.MasterNode.Setup.Deploy.csproj.FileListAbsolute.txt
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/obj/Release, No CCR/DataFlow.MasterNode.Setup.Deploy.dll
+MasterNode/Setup/DataFlow.MasterNode.Setup.Deploy/obj/Release/build.force
+DataFlow.vsmdi
+DataFlow.bld

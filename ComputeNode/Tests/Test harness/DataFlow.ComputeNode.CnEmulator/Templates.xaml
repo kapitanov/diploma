@@ -1,0 +1,474 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ControlTemplate x:Key="GlassButton"
+                     TargetType="{x:Type Button}">
+        <ControlTemplate.Resources>
+            <Storyboard x:Key="Timeline1">
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                               Storyboard.TargetName="glow"
+                                               Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.1500000"
+                                          Value="1" />
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="Timeline2">
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                               Storyboard.TargetName="glow"
+                                               Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.1500000"
+                                          Value="0" />
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+        </ControlTemplate.Resources>
+        <Border BorderBrush="#FFFFFFFF"
+                BorderThickness="1,1,1,1"
+                CornerRadius="4,4,4,4">
+            <Border x:Name="border"
+                    Background="#7F000000"                    
+                    BorderBrush="#FF000000"
+                    BorderThickness="1,1,1,1"
+                    CornerRadius="4,4,4,4">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.507*" />
+                        <RowDefinition Height="0.493*" />
+                    </Grid.RowDefinitions>
+                    <Border Opacity="0"
+                            HorizontalAlignment="Stretch"
+                            x:Name="glow"
+                            Width="Auto"
+                            Grid.RowSpan="2"
+                            CornerRadius="4,4,4,4">
+                        <Border.Background>
+                            <RadialGradientBrush>
+                                <RadialGradientBrush.RelativeTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.702"
+                                                        ScaleY="2.243" />
+                                        <SkewTransform AngleX="0"
+                                                       AngleY="0" />
+                                        <RotateTransform Angle="0" />
+                                        <TranslateTransform X="-0.368"
+                                                            Y="-0.152" />
+                                    </TransformGroup>
+                                </RadialGradientBrush.RelativeTransform>
+                                <GradientStop Color="#B28DBDFF"
+                                              Offset="0" />
+                                <GradientStop Color="#008DBDFF"
+                                              Offset="1" />
+                            </RadialGradientBrush>
+                        </Border.Background>
+                    </Border>
+
+                    <TextBlock HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Width="Auto"
+                               Text="{TemplateBinding Content}"
+                               Foreground="#FFFFFFFF"
+                               Margin="4"
+                               Grid.RowSpan="2" />
+
+                    <Border HorizontalAlignment="Stretch"
+                            Margin="0,0,0,0"
+                            x:Name="shine"
+                            Width="Auto"
+                            CornerRadius="4,4,0,0">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.494,0.889"
+                                                 StartPoint="0.494,0.028">
+                                <GradientStop Color="#99FFFFFF"
+                                              Offset="0" />
+                                <GradientStop Color="#33FFFFFF"
+                                              Offset="1" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+                </Grid>
+            </Border>
+        </Border>
+        <ControlTemplate.Triggers>            
+            <Trigger Property="IsPressed"
+                     Value="True">
+                <Setter Property="Opacity"
+                        TargetName="shine"
+                        Value="0.4" />
+                <Setter Property="Background"
+                        TargetName="border"
+                        Value="#CC000000" />
+                <Setter Property="Visibility"
+                        TargetName="glow"
+                        Value="Hidden" />
+            </Trigger>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+                <Trigger.EnterActions>
+                    <BeginStoryboard Storyboard="{StaticResource Timeline1}" />
+                </Trigger.EnterActions>
+                <Trigger.ExitActions>
+                    <BeginStoryboard x:Name="Timeline2_BeginStoryboard"
+                                     Storyboard="{StaticResource Timeline2}" />
+                </Trigger.ExitActions>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="WaitScreen"
+                     TargetType="{x:Type Label}">
+        <Border x:Name="splash"
+                Grid.Column="0"
+                Grid.Row="0"
+                Background="White"
+                Opacity="75"
+                Visibility="Visible"
+                CornerRadius="0">
+            <StackPanel VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                <Grid x:Name="LayoutRoot">
+                    <Grid.Resources>
+                        <Color x:Key="InnerRing">#FF5050FA</Color>
+                        <Color x:Key="OuterRing">#FF008475</Color>
+                        <Storyboard x:Key="RotateAnimation">
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                                           Storyboard.TargetName="canvas"
+                                                           Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)"
+                                                           RepeatBehavior="Forever">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000"
+                                                      Value="180" />
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </Grid.Resources>
+                    <Grid.Triggers>
+                        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                            <BeginStoryboard Storyboard="{StaticResource RotateAnimation}"
+                                             x:Name="RotateAnimation_BeginStoryboard" />
+                        </EventTrigger>
+                    </Grid.Triggers>
+                    <Canvas Margin="0,0,0,0"
+                            RenderTransformOrigin="0.5,0.5"
+                            HorizontalAlignment="Left"
+                            x:Name="canvas"
+                            VerticalAlignment="Top"
+                            Width="128"
+                            Height="128">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1"
+                                                ScaleY="1" />
+                                <SkewTransform AngleX="0"
+                                               AngleY="0" />
+                                <RotateTransform Angle="0" />
+                                <TranslateTransform X="0"
+                                                    Y="0" />
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path Fill="#FFFFFFFF"
+                              Stretch="Fill"
+                              Width="49"
+                              Height="49"
+                              Canvas.Left="15.5"
+                              Canvas.Top="15.5"
+                              Data="M-71.583334,0.083335876 L-23.583332,-47.916664">
+                            <Path.Stroke>
+                                <LinearGradientBrush EndPoint="1,0.5"
+                                                     StartPoint="0,0.5">
+                                    <GradientStop Color="#FF008475"
+                                                  Offset="0" />
+                                    <GradientStop Color="{DynamicResource InnerRing}"
+                                                  Offset="1" />
+                                </LinearGradientBrush>
+                            </Path.Stroke>
+                        </Path>
+                        <Path Fill="#FFFFFFFF"
+                              Stretch="Fill"
+                              Width="49"
+                              Height="49"
+                              Canvas.Left="63.5"
+                              Canvas.Top="63.5"
+                              Data="M118.01389,180.47244 L167.20555,120">
+                            <Path.Stroke>
+                                <LinearGradientBrush EndPoint="1,0.5"
+                                                     StartPoint="0,0.5">
+                                    <GradientStop Color="#FF008475"
+                                                  Offset="0" />
+                                    <GradientStop Color="{DynamicResource InnerRing}"
+                                                  Offset="1" />
+                                </LinearGradientBrush>
+                            </Path.Stroke>
+                        </Path>
+                        <Path Fill="#FFFFFFFF"
+                              Stretch="Fill"
+                              Width="49"
+                              Height="49"
+                              Canvas.Left="15.5"
+                              Canvas.Top="63.5"
+                              Data="M71.999749,120.00025 L119.99975,168.00025">
+                            <Path.Stroke>
+                                <LinearGradientBrush EndPoint="1,0.5"
+                                                     StartPoint="0,0.5">
+                                    <GradientStop Color="#FF008475"
+                                                  Offset="0" />
+                                    <GradientStop Color="{DynamicResource InnerRing}"
+                                                  Offset="1" />
+                                </LinearGradientBrush>
+                            </Path.Stroke>
+                        </Path>
+                        <Path Fill="#FFFFFFFF"
+                              Stretch="Fill"
+                              Width="49"
+                              Height="49"
+                              Canvas.Left="63.5"
+                              Canvas.Top="15.5"
+                              Data="M120,72 L168,120">
+                            <Path.Stroke>
+                                <LinearGradientBrush EndPoint="1,0.5"
+                                                     StartPoint="0,0.5">
+                                    <GradientStop Color="#FF008475"
+                                                  Offset="0" />
+                                    <GradientStop Color="{DynamicResource InnerRing}"
+                                                  Offset="1" />
+                                </LinearGradientBrush>
+                            </Path.Stroke>
+                        </Path>
+                        <Path Fill="#FFFFFFFF"
+                              Stretch="Fill"
+                              Width="49"
+                              Height="1"
+                              Canvas.Left="15.5"
+                              Canvas.Top="63.5"
+                              Data="M72,120 L120,120">
+                            <Path.Stroke>
+                                <LinearGradientBrush EndPoint="1,0.5"
+                                                     StartPoint="0,0.5">
+                                    <GradientStop Color="#FF008475"
+                                                  Offset="0" />
+                                    <GradientStop Color="{DynamicResource InnerRing}"
+                                                  Offset="1" />
+                                </LinearGradientBrush>
+                            </Path.Stroke>
+                        </Path>
+                        <Path Fill="#FFFFFFFF"
+                              Stretch="Fill"
+                              Width="1"
+                              Height="49"
+                              Canvas.Left="63.5"
+                              Canvas.Top="15.5"
+                              Data="M120,39.5 L120,87.5">
+                            <Path.Stroke>
+                                <LinearGradientBrush EndPoint="1,0.5"
+                                                     StartPoint="0,0.5">
+                                    <GradientStop Color="#FF008475"
+                                                  Offset="0" />
+                                    <GradientStop Color="{DynamicResource InnerRing}"
+                                                  Offset="1" />
+                                </LinearGradientBrush>
+                            </Path.Stroke>
+                        </Path>
+                        <Path Fill="#FFFFFFFF"
+                              Stretch="Fill"
+                              Width="1"
+                              Height="49"
+                              Canvas.Left="63.5"
+                              Canvas.Top="63.5"
+                              Data="M120,168 L120,120">
+                            <Path.Stroke>
+                                <LinearGradientBrush EndPoint="1,0.5"
+                                                     StartPoint="0,0.5">
+                                    <GradientStop Color="#FF008475"
+                                                  Offset="0" />
+                                    <GradientStop Color="{DynamicResource InnerRing}"
+                                                  Offset="1" />
+                                </LinearGradientBrush>
+                            </Path.Stroke>
+                        </Path>
+                        <Path Fill="#FFFFFFFF"
+                              Stretch="Fill"
+                              Width="49"
+                              Height="1.156"
+                              Canvas.Left="63.5"
+                              Canvas.Top="63.5"
+                              Data="M168,119.84375 L120,120">
+                            <Path.Stroke>
+                                <LinearGradientBrush EndPoint="1,0.5"
+                                                     StartPoint="0,0.5">
+                                    <GradientStop Color="#FF008475"
+                                                  Offset="0" />
+                                    <GradientStop Color="{DynamicResource InnerRing}"
+                                                  Offset="1" />
+                                </LinearGradientBrush>
+                            </Path.Stroke>
+                        </Path>
+                        <Canvas Width="32"
+                                Height="32"
+                                Canvas.Top="48">
+                            <Ellipse Stroke="#FF008475"
+                                     Width="32"
+                                     Height="32">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#FF008475"
+                                                      Offset="0" />
+                                        <GradientStop Color="#FF000000"
+                                                      Offset="0.904" />
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Ellipse Width="16"
+                                     Height="16"
+                                     Canvas.Left="8"
+                                     Canvas.Top="8"
+                                     Margin="0,0,0,0">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#460000FF"
+                                                      Offset="0" />
+                                        <GradientStop Color="#FF5050FA"
+                                                      Offset="1" />
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                                <Ellipse.Stroke>
+                                    <SolidColorBrush Color="{DynamicResource InnerRing}" />
+                                </Ellipse.Stroke>
+                            </Ellipse>
+                        </Canvas>
+                        <Canvas Width="32"
+                                Height="32"
+                                Canvas.Left="96"
+                                Canvas.Top="48">
+                            <Ellipse Stroke="#FF008475"
+                                     Width="32"
+                                     Height="32">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#FF008475"
+                                                      Offset="0" />
+                                        <GradientStop Color="#FF000000"
+                                                      Offset="0.904" />
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Ellipse Width="16"
+                                     Height="16"
+                                     Canvas.Left="8"
+                                     Canvas.Top="8"
+                                     Margin="0,0,0,0">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#460000FF"
+                                                      Offset="0" />
+                                        <GradientStop Color="#FF5050FA"
+                                                      Offset="1" />
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                                <Ellipse.Stroke>
+                                    <SolidColorBrush Color="{DynamicResource InnerRing}" />
+                                </Ellipse.Stroke>
+                            </Ellipse>
+                        </Canvas>
+                        <Canvas Width="32"
+                                Height="32"
+                                Canvas.Left="48"
+                                Canvas.Top="48">
+                            <Ellipse Stroke="#FF008475"
+                                     Width="32"
+                                     Height="32">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#FF008475"
+                                                      Offset="0" />
+                                        <GradientStop Color="#FF000000"
+                                                      Offset="0.904" />
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Ellipse Width="16"
+                                     Height="16"
+                                     Canvas.Left="8"
+                                     Canvas.Top="8"
+                                     Margin="0,0,0,0">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#460000FF"
+                                                      Offset="0" />
+                                        <GradientStop Color="#FF5050FA"
+                                                      Offset="1" />
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                                <Ellipse.Stroke>
+                                    <SolidColorBrush Color="{DynamicResource InnerRing}" />
+                                </Ellipse.Stroke>
+                            </Ellipse>
+                        </Canvas>
+                        <Canvas Width="32"
+                                Height="32"
+                                Canvas.Left="48">
+                            <Ellipse Stroke="#FF008475"
+                                     Width="32"
+                                     Height="32">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#FF008475"
+                                                      Offset="0" />
+                                        <GradientStop Color="#FF000000"
+                                                      Offset="0.904" />
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Ellipse Width="16"
+                                     Height="16"
+                                     Canvas.Left="8"
+                                     Canvas.Top="8"
+                                     Margin="0,0,0,0">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#460000FF"
+                                                      Offset="0" />
+                                        <GradientStop Color="#FF5050FA"
+                                                      Offset="1" />
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                                <Ellipse.Stroke>
+                                    <SolidColorBrush Color="{DynamicResource InnerRing}" />
+                                </Ellipse.Stroke>
+                            </Ellipse>
+                        </Canvas>
+                        <Canvas Width="32"
+                                Height="32"
+                                Canvas.Left="48"
+                                Canvas.Top="96">
+                            <Ellipse Stroke="#FF008475"
+                                     Width="32"
+                                     Height="32">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#FF008475"
+                                                      Offset="0" />
+                                        <GradientStop Color="#FF000000"
+                                                      Offset="0.904" />
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Ellipse Width="16"
+                                     Height="16"
+                                     Canvas.Left="8"
+                                     Canvas.Top="8"
+                                     Margin="0,0,0,0">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#460000FF"
+                                                      Offset="0" />
+                                        <GradientStop Color="#FF5050FA"
+                                                      Offset="1" />
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                                <Ellipse.Stroke>
+                                    <SolidColorBrush Color="{DynamicResource InnerRing}" />
+                                </Ellipse.Stroke>
+                            </Ellipse>
+                        </Canvas>
+                    </Canvas>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </ControlTemplate>
+
+</ResourceDictionary>

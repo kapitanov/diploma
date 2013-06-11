@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBF21B21-B239-4AB9-838F-2E01AF9A234D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AISTek.DataFlow.Tools.JobEditor</RootNamespace>
+    <AssemblyName>DataFlow.Tools.JobEditor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug, No CCR|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug, No CCR\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\DataFlow.Tools.JobEditor.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;d:\Microsoft Visual Studio 2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;d:\Microsoft Visual Studio 2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release, No CCR|x86'">
+    <OutputPath>bin\x86\Release, No CCR\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\DataFlow.Tools.JobEditor.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;d:\Microsoft Visual Studio 2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;d:\Microsoft Visual Studio 2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GraphSharp">
+      <HintPath>..\..\Reference Assemblies\GraphSharp\GraphSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphSharp.Contracts">
+      <HintPath>..\..\Reference Assemblies\GraphSharp\GraphSharp.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphSharp.Controls">
+      <HintPath>..\..\Reference Assemblies\GraphSharp\GraphSharp.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL" />
+    <Reference Include="QuickGraph">
+      <HintPath>..\..\Reference Assemblies\GraphSharp\QuickGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="RibbonControlsLibrary">
+      <HintPath>..\..\Reference Assemblies\WPFToollkit\RibbonControlsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFExtensions">
+      <HintPath>..\..\Reference Assemblies\WPFToollkit\WPFExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference Assemblies\WPFToollkit\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="DataModel\CreateFileRequest.cs" />
+    <Compile Include="DataModel\EntryPointDefinition.cs" />
+    <Compile Include="DataModel\FileRequest.cs" />
+    <Compile Include="DataModel\JobDefinition.cs" />
+    <Compile Include="DataModel\Pair.cs" />
+    <Compile Include="DataModel\PersistentStorage.cs" />
+    <Compile Include="DataModel\Stage.cs" />
+    <Compile Include="DataModel\StageDataTemplateSelector.cs" />
+    <Compile Include="DataModel\StageIconConvertor.cs" />
+    <Compile Include="DataModel\StagesProvider.cs" />
+    <Compile Include="DataModel\StageState.cs" />
+    <Compile Include="DataModel\Stages\BuildFileList.cs" />
+    <Compile Include="DataModel\Stages\CreateJob.cs" />
+    <Compile Include="DataModel\Stages\ExecuteJob.cs" />
+    <Compile Include="DataModel\Stages\LinkFiles.cs" />
+    <Compile Include="DataModel\Stages\StageFailedException.cs" />
+    <Compile Include="DataModel\Stages\UploadFiles.cs" />
+    <Compile Include="DataModel\Stages\UploadTasks.cs" />
+    <Compile Include="DataModel\Stages\ValidateGraph.cs" />
+    <Compile Include="DataModel\TaskRequest.cs" />
+    <Compile Include="DataModel\UploadFileRequest.cs" />
+    <Compile Include="ViewModel\FileRequestTemplateSelector.cs" />
+    <Compile Include="Views\AddDependencyView.xaml.cs">
+      <DependentUpon>AddDependencyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddFileView.xaml.cs">
+      <DependentUpon>AddFileView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\JobGraphLayout.cs" />
+    <Compile Include="ViewModel\TaskEdge.cs" />
+    <Compile Include="ViewModel\TaskGraph.cs" />
+    <Compile Include="ViewModel\TaskVertex.cs" />
+    <Compile Include="Views\ClassBrowser.xaml.cs">
+      <DependentUpon>ClassBrowser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EntryPointView.xaml.cs">
+      <DependentUpon>EntryPointView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ErrorReportView.xaml.cs">
+      <DependentUpon>ErrorReportView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JobExecutingView.xaml.cs">
+      <DependentUpon>JobExecutingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TaskParametersView.xaml.cs">
+      <DependentUpon>TaskParametersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TaskView.xaml.cs">
+      <DependentUpon>TaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TextInput.xaml.cs">
+      <DependentUpon>TextInput.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UploadJobView.xaml.cs">
+      <DependentUpon>UploadJobView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Resources\InterfaceStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ErrorReportView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\JobExecutingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Resources\GraphLayoutTemplates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ListBoxTemplates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddDependencyView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddFileView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ClassBrowser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EntryPointView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TaskParametersView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TaskView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TextInput.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UploadJobView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ComputeNode\DataFlow.ComputeNode.Classes\DataFlow.ComputeNode.Classes.csproj">
+      <Project>{6E81F795-1098-4428-84EF-02D0F6CE1EF0}</Project>
+      <Name>DataFlow.ComputeNode.Classes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\DataFlow.Shared.Classes\DataFlow.Shared.Classes.csproj">
+      <Project>{53A40DD4-D79C-4EF1-A350-EE298F23AE8B}</Project>
+      <Name>DataFlow.Shared.Classes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\DataFlow.Shared.Client\DataFlow.Shared.Client.csproj">
+      <Project>{F27C0DF6-93CD-40F9-90E8-1BB1D353B97D}</Project>
+      <Name>DataFlow.Shared.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\DataFlow.PresentationExtensions\DataFlow.PresentationExtensions.csproj">
+      <Project>{3D85AC27-F465-47F2-86A5-BF7176EB4426}</Project>
+      <Name>DataFlow.PresentationExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\DataFlow.Threading\DataFlow.Threading.csproj">
+      <Project>{9D3C8C7E-C795-4EFA-BD29-D685F270B086}</Project>
+      <Name>DataFlow.Threading</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\DataFlow.Util\DataFlow.Util.csproj">
+      <Project>{9BA20C04-79ED-44BA-9AD8-099E1ACA0BFA}</Project>
+      <Name>DataFlow.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Assembly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NewTask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\EditJobName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="Resources\Splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Upload.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AddFile.png" />
+    <Resource Include="Resources\RemoveFile.png" />
+    <Resource Include="Resources\Run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AddDependency.png" />
+    <Resource Include="Resources\RemoveDependency.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SelectAssembly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SelectClass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NewFile.png" />
+    <Resource Include="Resources\UploadFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NewFileIcon.png" />
+    <Resource Include="Resources\UploadFileIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SelectEntrypoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NewJob.png" />
+    <Resource Include="Resources\OpenJob.png" />
+    <Resource Include="Resources\SaveJob.png" />
+    <Resource Include="Resources\SaveJobAs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\StageCompleted.png" />
+    <Resource Include="Resources\StageFailed.png" />
+    <Resource Include="Resources\StagePending.png" />
+    <Resource Include="Resources\StageProcessing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\JobFailedError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

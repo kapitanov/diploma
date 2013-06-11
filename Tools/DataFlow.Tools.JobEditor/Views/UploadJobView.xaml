@@ -1,0 +1,55 @@
+﻿<PresentationExtensions:AeroWindow x:Class="AISTek.DataFlow.Tools.JobEditor.Views.UploadJobView"
+                                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                   xmlns:PresentationExtensions="clr-namespace:AISTek.DataFlow.PresentationExtensions;assembly=DataFlow.PresentationExtensions"
+                                   Loaded="AeroWindow_Loaded"
+                                   Title="Execute job"
+                                   ResizeMode="NoResize"
+                                   WindowStartupLocation="CenterScreen"
+                                   SizeToContent="Height"
+                                   Height="266"
+                                   Width="655">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="textStatus"
+                   Margin="32,0,32,0"
+                   Grid.Row="0" />
+
+        <Border Grid.Row="1"
+                Margin="32,8,32,0"
+                Height="24"
+                CornerRadius="2"
+                BorderThickness="1"
+                BorderBrush="#A0505050">
+            <ProgressBar x:Name="progressBar"
+                         Maximum="1"
+                         Value="0.5"
+                         Foreground="{DynamicResource ResourceKey=AeroProgressBarActive}"
+                         Background="#00000000"
+                         BorderThickness="1"
+                         BorderBrush="#00000000"
+                         Height="24" />
+        </Border>
+
+        <ListBox x:Name="listStages"
+                 Grid.Row="2"
+                 Margin="8,8,8,8"
+                 ItemTemplate="{DynamicResource ResourceKey=StageTemplate}" />
+
+        <StackPanel x:Name="panelClose"
+                    Grid.Row="3"
+                    Visibility="Collapsed">
+            <Button HorizontalAlignment="Right"
+                    Margin="0,8,32,0"
+                    Click="Close_Click">
+                <TextBlock Margin="8,0,8,0">Close</TextBlock>
+            </Button>
+        </StackPanel>
+    </Grid>
+</PresentationExtensions:AeroWindow>

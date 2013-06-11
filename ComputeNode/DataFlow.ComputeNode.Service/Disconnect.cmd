@@ -1,0 +1,1 @@
+﻿rasdial "Ratelcom VPN" /DISCONNECT

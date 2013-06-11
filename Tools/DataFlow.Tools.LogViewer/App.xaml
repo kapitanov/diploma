@@ -1,0 +1,65 @@
+﻿<Application x:Class="AISTek.DataFlow.Tools.LogViewer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vsm="clr-namespace:System.Windows;assembly=WPFToolkit"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Controls="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit" xmlns:Primitives="clr-namespace:Microsoft.Windows.Controls.Primitives;assembly=WPFToolkit" mc:Ignorable="d"
+             StartupUri="mainview.xaml">
+    <Application.Resources>
+        <ControlTemplate x:Key="WaitScreen"
+                         TargetType="{x:Type Label}">
+            <Border x:Name="splash"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Background="White"
+                    Opacity="0.75"
+                    Visibility="Visible"
+                    CornerRadius="0">
+                <StackPanel VerticalAlignment="Center"
+                            HorizontalAlignment="Center">
+                    <Grid x:Name="LayoutRoot"
+                          Background="#80FFFFFF"
+                          Opacity="0.75">
+                        <Grid.Resources>
+                            <Storyboard x:Key="RotateAnimation">
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="VisualElement"
+                                                               Storyboard.TargetProperty="(UIElement.RenderTransform).Angle"
+                                                               RepeatBehavior="Forever">
+                                    <SplineDoubleKeyFrame KeyTime="0:0:1"
+                                                          Value="360" />
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </Grid.Resources>
+                        <Grid.Triggers>
+                            <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                                <BeginStoryboard Storyboard="{StaticResource RotateAnimation}"
+                                                 x:Name="RotateAnimation_BeginStoryboard" />
+                            </EventTrigger>
+                        </Grid.Triggers>
+                        <Grid>
+                            <Ellipse Width="25"
+                                     Height="25"
+                                     StrokeThickness="5.5"
+                                     Opacity="1"
+                                     x:Name="VisualElement">
+                                <Ellipse.Stroke>
+                                    <LinearGradientBrush EndPoint="0.5,1"
+                                                         StartPoint="0.5,0">
+                                        <GradientStop Color="#FF096475"
+                                                      Offset="0.571" />
+                                        <GradientStop Color="#FFA8FCFC"
+                                                      Offset="1" />
+                                    </LinearGradientBrush>
+                                </Ellipse.Stroke>
+                                <Ellipse.RenderTransform>
+                                    <RotateTransform CenterX="12.5"
+                                                     CenterY="12.5" />
+                                </Ellipse.RenderTransform>
+                            </Ellipse>
+                        </Grid>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </ControlTemplate>
+    </Application.Resources>
+</Application>

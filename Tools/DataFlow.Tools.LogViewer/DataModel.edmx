@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AISTek.DataFlow.Tools.LogViewer.Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="AISTekDataFlowToolsLogViewerModelStoreContainer">
+          <EntitySet Name="Category" EntityType="AISTek.DataFlow.Tools.LogViewer.Model.Store.Category" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="CategoryLog" EntityType="AISTek.DataFlow.Tools.LogViewer.Model.Store.CategoryLog" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Log" EntityType="AISTek.DataFlow.Tools.LogViewer.Model.Store.Log" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <AssociationSet Name="FK_CategoryLog_Category" Association="AISTek.DataFlow.Tools.LogViewer.Model.Store.FK_CategoryLog_Category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="CategoryLog" EntitySet="CategoryLog" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoryLog_Log" Association="AISTek.DataFlow.Tools.LogViewer.Model.Store.FK_CategoryLog_Log">
+            <End Role="Log" EntitySet="Log" />
+            <End Role="CategoryLog" EntitySet="CategoryLog" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="64" />
+        </EntityType>
+        <EntityType Name="CategoryLog">
+          <Key>
+            <PropertyRef Name="CategoryLogID" />
+          </Key>
+          <Property Name="CategoryLogID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="LogID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Log">
+          <Key>
+            <PropertyRef Name="LogID" />
+          </Key>
+          <Property Name="LogID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EventID" Type="int" />
+          <Property Name="Priority" Type="int" Nullable="false" />
+          <Property Name="Severity" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Timestamp" Type="datetime" Nullable="false" />
+          <Property Name="MachineName" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="AppDomainName" Type="nvarchar" Nullable="false" MaxLength="512" />
+          <Property Name="ProcessID" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="ProcessName" Type="nvarchar" Nullable="false" MaxLength="512" />
+          <Property Name="ThreadName" Type="nvarchar" MaxLength="512" />
+          <Property Name="Win32ThreadId" Type="nvarchar" MaxLength="128" />
+          <Property Name="Message" Type="nvarchar" MaxLength="1500" />
+          <Property Name="FormattedMessage" Type="ntext" />
+        </EntityType>
+        <Association Name="FK_CategoryLog_Category">
+          <End Role="Category" Type="AISTek.DataFlow.Tools.LogViewer.Model.Store.Category" Multiplicity="1" />
+          <End Role="CategoryLog" Type="AISTek.DataFlow.Tools.LogViewer.Model.Store.CategoryLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="CategoryID" />
+            </Principal>
+            <Dependent Role="CategoryLog">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoryLog_Log">
+          <End Role="Log" Type="AISTek.DataFlow.Tools.LogViewer.Model.Store.Log" Multiplicity="1" />
+          <End Role="CategoryLog" Type="AISTek.DataFlow.Tools.LogViewer.Model.Store.CategoryLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Log">
+              <PropertyRef Name="LogID" />
+            </Principal>
+            <Dependent Role="CategoryLog">
+              <PropertyRef Name="LogID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="ClearLogs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AISTek.DataFlow.Tools.LogViewer.Model" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="LogsConnection">
+          <EntitySet Name="Categories" EntityType="AISTek.DataFlow.Tools.LogViewer.Model.Category" />
+          <EntitySet Name="CategoryLogs" EntityType="AISTek.DataFlow.Tools.LogViewer.Model.CategoryLog" />
+          <EntitySet Name="Logs" EntityType="AISTek.DataFlow.Tools.LogViewer.Model.Log" />
+          <AssociationSet Name="FK_CategoryLog_Category" Association="AISTek.DataFlow.Tools.LogViewer.Model.FK_CategoryLog_Category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="CategoryLog" EntitySet="CategoryLogs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoryLog_Log" Association="AISTek.DataFlow.Tools.LogViewer.Model.FK_CategoryLog_Log">
+            <End Role="Log" EntitySet="Logs" />
+            <End Role="CategoryLog" EntitySet="CategoryLogs" />
+          </AssociationSet>
+          <FunctionImport Name="ClearLogs" />
+        </EntityContainer>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Logs" Relationship="AISTek.DataFlow.Tools.LogViewer.Model.FK_CategoryLog_Category" FromRole="Category" ToRole="CategoryLog" />
+        </EntityType>
+        <EntityType Name="CategoryLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <NavigationProperty Name="Category" Relationship="AISTek.DataFlow.Tools.LogViewer.Model.FK_CategoryLog_Category" FromRole="CategoryLog" ToRole="Category" />
+          <NavigationProperty Name="Log" Relationship="AISTek.DataFlow.Tools.LogViewer.Model.FK_CategoryLog_Log" FromRole="CategoryLog" ToRole="Log" />
+        </EntityType>
+        <EntityType Name="Log">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="EventId" Type="Int32" />
+          <Property Name="Priority" Type="Int32" Nullable="false" />
+          <Property Name="Severity" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <Property Name="MachineName" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="AppDomainName" Type="String" Nullable="false" MaxLength="512" Unicode="true" FixedLength="false" />
+          <Property Name="ProcessId" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ProcessName" Type="String" Nullable="false" MaxLength="512" Unicode="true" FixedLength="false" />
+          <Property Name="ThreadName" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+          <Property Name="Win32ThreadId" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="Message" Type="String" MaxLength="1500" Unicode="true" FixedLength="false" />
+          <Property Name="FormattedMessage" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Categories" Relationship="AISTek.DataFlow.Tools.LogViewer.Model.FK_CategoryLog_Log" FromRole="Log" ToRole="CategoryLog" />
+        </EntityType>
+        <Association Name="FK_CategoryLog_Category">
+          <End Role="Category" Type="AISTek.DataFlow.Tools.LogViewer.Model.Category" Multiplicity="1" />
+          <End Role="CategoryLog" Type="AISTek.DataFlow.Tools.LogViewer.Model.CategoryLog" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_CategoryLog_Log">
+          <End Role="Log" Type="AISTek.DataFlow.Tools.LogViewer.Model.Log" Multiplicity="1" />
+          <End Role="CategoryLog" Type="AISTek.DataFlow.Tools.LogViewer.Model.CategoryLog" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AISTekDataFlowToolsLogViewerModelStoreContainer" CdmEntityContainer="LogsConnection">
+          <EntitySetMapping Name="Categories"><EntityTypeMapping TypeName="AISTek.DataFlow.Tools.LogViewer.Model.Category"><MappingFragment StoreEntitySet="Category">
+            <ScalarProperty Name="Id" ColumnName="CategoryID" />
+            <ScalarProperty Name="Name" ColumnName="CategoryName" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="CategoryLogs"><EntityTypeMapping TypeName="AISTek.DataFlow.Tools.LogViewer.Model.CategoryLog"><MappingFragment StoreEntitySet="CategoryLog">
+            <ScalarProperty Name="Id" ColumnName="CategoryLogID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Logs"><EntityTypeMapping TypeName="AISTek.DataFlow.Tools.LogViewer.Model.Log"><MappingFragment StoreEntitySet="Log">
+            <ScalarProperty Name="Id" ColumnName="LogID" />
+            <ScalarProperty Name="EventId" ColumnName="EventID" />
+            <ScalarProperty Name="Priority" ColumnName="Priority" />
+            <ScalarProperty Name="Severity" ColumnName="Severity" />
+            <ScalarProperty Name="Title" ColumnName="Title" />
+            <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+            <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+            <ScalarProperty Name="AppDomainName" ColumnName="AppDomainName" />
+            <ScalarProperty Name="ProcessId" ColumnName="ProcessID" />
+            <ScalarProperty Name="ProcessName" ColumnName="ProcessName" />
+            <ScalarProperty Name="ThreadName" ColumnName="ThreadName" />
+            <ScalarProperty Name="Win32ThreadId" ColumnName="Win32ThreadId" />
+            <ScalarProperty Name="Message" ColumnName="Message" />
+            <ScalarProperty Name="FormattedMessage" ColumnName="FormattedMessage" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="FK_CategoryLog_Category" TypeName="AISTek.DataFlow.Tools.LogViewer.Model.FK_CategoryLog_Category" StoreEntitySet="CategoryLog">
+            <EndProperty Name="Category">
+              <ScalarProperty Name="Id" ColumnName="CategoryID" />
+            </EndProperty>
+            <EndProperty Name="CategoryLog">
+              <ScalarProperty Name="Id" ColumnName="CategoryLogID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_CategoryLog_Log" TypeName="AISTek.DataFlow.Tools.LogViewer.Model.FK_CategoryLog_Log" StoreEntitySet="CategoryLog">
+            <EndProperty Name="Log">
+              <ScalarProperty Name="Id" ColumnName="LogID" />
+            </EndProperty>
+            <EndProperty Name="CategoryLog">
+              <ScalarProperty Name="Id" ColumnName="CategoryLogID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <FunctionImportMapping FunctionImportName="ClearLogs" FunctionName="AISTek.DataFlow.Tools.LogViewer.Model.Store.ClearLogs" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="DataModel">
+        <EntityTypeShape EntityType="AISTek.DataFlow.Tools.LogViewer.Model.Category" Width="1.5" PointX="0.75" PointY="0.875" Height="1.59568359375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AISTek.DataFlow.Tools.LogViewer.Model.CategoryLog" Width="1.5" PointX="3" PointY="0.875" Height="1.59568359375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AISTek.DataFlow.Tools.LogViewer.Model.Log" Width="1.5" PointX="5.75" PointY="1" Height="3.9033007812499996" IsExpanded="true" />
+        <AssociationConnector Association="AISTek.DataFlow.Tools.LogViewer.Model.FK_CategoryLog_Category" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="1.672841796875" />
+          <ConnectorPoint PointX="3" PointY="1.672841796875" /></AssociationConnector>
+        <AssociationConnector Association="AISTek.DataFlow.Tools.LogViewer.Model.FK_CategoryLog_Log" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.75" PointY="1.735341796875" />
+          <ConnectorPoint PointX="4.5" PointY="1.735341796875" />
+          </AssociationConnector></Diagram></Diagrams>
+  </Designer>
+</edmx:Edmx>

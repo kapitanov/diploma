@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://aistek.dataflow/services/scheduler/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="JobManager" targetNamespace="http://aistek.dataflow/services/scheduler/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://tempuri.org/" location="" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://aistek.dataflow/services/scheduler/Imports">
+      <xsd:import namespace="http://aistek.dataflow/services/scheduler/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IJobManager_CreateJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateJob" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_CreateJob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_OpenJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:OpenJob" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_CreateTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTask" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_CreateTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_UpdateTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTask" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_RemoveTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTask" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_StartJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartJob" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_CancelJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelJob" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_RestartJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:RestartJob" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_DeleteJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteJob" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_FindJobs_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindJobs" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_FindJobs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindJobsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_GetAllJobs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllJobs" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_GetAllJobs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllJobsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_get_CurrentJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_CurrentJob" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_get_CurrentJob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_CurrentJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_JobCompleted_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:JobCompleted" />
+  </wsdl:message>
+  <wsdl:message name="IJobManager_JobFailed_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:JobFailed" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IJobManager">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CreateJob">
+      <wsdl:input wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/CreateJob" message="tns:IJobManager_CreateJob_InputMessage" />
+      <wsdl:output wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/CreateJobResponse" message="tns:IJobManager_CreateJob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OpenJob">
+      <wsdl:input wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/OpenJob" message="tns:IJobManager_OpenJob_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CreateTask">
+      <wsdl:input wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/CreateTask" message="tns:IJobManager_CreateTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/CreateTaskResponse" message="tns:IJobManager_CreateTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="UpdateTask">
+      <wsdl:input wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/UpdateTask" message="tns:IJobManager_UpdateTask_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="RemoveTask">
+      <wsdl:input wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/RemoveTask" message="tns:IJobManager_RemoveTask_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="StartJob">
+      <wsdl:input wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/StartJob" message="tns:IJobManager_StartJob_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CancelJob">
+      <wsdl:input wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/CancelJob" message="tns:IJobManager_CancelJob_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="RestartJob">
+      <wsdl:input wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/RestartJob" message="tns:IJobManager_RestartJob_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DeleteJob">
+      <wsdl:input wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/DeleteJob" message="tns:IJobManager_DeleteJob_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="FindJobs">
+      <wsdl:input wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/FindJobs" message="tns:IJobManager_FindJobs_InputMessage" />
+      <wsdl:output wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/FindJobsResponse" message="tns:IJobManager_FindJobs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetAllJobs">
+      <wsdl:input wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/GetAllJobs" message="tns:IJobManager_GetAllJobs_InputMessage" />
+      <wsdl:output wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/GetAllJobsResponse" message="tns:IJobManager_GetAllJobs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="get_CurrentJob">
+      <wsdl:input wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/get_CurrentJob" message="tns:IJobManager_get_CurrentJob_InputMessage" />
+      <wsdl:output wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/get_CurrentJobResponse" message="tns:IJobManager_get_CurrentJob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="JobCompleted">
+      <wsdl:output wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/JobCompleted" message="tns:IJobManager_JobCompleted_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="JobFailed">
+      <wsdl:output wsaw:Action="http://aistek.dataflow/services/scheduler/IJobManager/JobFailed" message="tns:IJobManager_JobFailed_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="JobManager">
+    <wsdl:port name="WSDualHttpBinding_IJobManager" binding="i0:WSDualHttpBinding_IJobManager">
+      <soap12:address location="http://bershome:8080/JobManager.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://bershome:8080/JobManager.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

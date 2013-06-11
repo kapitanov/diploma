@@ -1,0 +1,25 @@
+﻿<PresentationExtensions:AeroWindow x:Class="AISTek.DataFlow.Tools.JobEditor.Views.JobExecutingView"
+                                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                   xmlns:PresentationExtensions="clr-namespace:AISTek.DataFlow.PresentationExtensions;assembly=DataFlow.PresentationExtensions"
+                                   Title="Executing job &quot;Test job&quot;..."
+                                   Height="122"
+                                   ResizeMode="NoResize"
+                                   WindowStartupLocation="CenterScreen"
+                                   WindowStyle="SingleBorderWindow"
+                                   WindowState="Normal"
+                                   Width="466">
+    <StackPanel Height="82">
+        <ProgressBar IsIndeterminate="True"
+                     Margin="8,16,8,8"
+                     Height="24"
+                     Foreground="SkyBlue" />
+        <Button x:Name="buttonCancel"
+                HorizontalAlignment="Right"
+                Margin="8,0,8,0"
+                Height="28"
+                Click="Cancel_Click">
+            Cancel
+        </Button>
+    </StackPanel>
+</PresentationExtensions:AeroWindow>

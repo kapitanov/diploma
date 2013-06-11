@@ -1,0 +1,26 @@
+﻿<Window x:Class="AISTek.DataFlow.ComputeNode.ServiceTestHarness.StatusView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StatusView"
+        Height="200"
+        Width="300"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Grid Grid.Column="0"
+              Grid.Row="0">
+            <StackPanel>
+                <TextBlock Text="Server is running version " />
+                <TextBlock x:Name="Version" />
+                <Button Template="{DynamicResource ResourceKey=GlassButton}"
+                        Click="Button_Click">
+                    Update
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Label x:Name="waiter"
+               Template="{DynamicResource ResourceKey=WaitScreen}"
+               Grid.Column="0"
+               Grid.Row="0"
+               Visibility="Visible" />
+    </Grid>
+</Window>

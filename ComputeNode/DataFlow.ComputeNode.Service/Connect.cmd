@@ -1,0 +1,1 @@
+﻿@cmd /k start rasdial "Ratelcom VPN" LOGIN PASS

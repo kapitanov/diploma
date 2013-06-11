@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE99C89C-3A5E-4C10-850A-591F2020BE28}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AISTek.DataFlow.DevSamples.Patterns</RootNamespace>
+    <AssemblyName>DataFlow.DevSamples.Patterns</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MapTask.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReduceTask.cs" />
+    <Compile Include="Word.cs" />
+    <Compile Include="Words.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\DataFlow.Shared.Patterns\DataFlow.Shared.Patterns.csproj">
+      <Project>{2D637C52-44EA-4A50-9B66-F7D87012BB67}</Project>
+      <Name>DataFlow.Shared.Patterns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\DataFlow.Shared.PatternTasks\DataFlow.Shared.PatternTasks.csproj">
+      <Project>{882F34FE-9B68-4CEB-BAF0-8B3D392119DA}</Project>
+      <Name>DataFlow.Shared.PatternTasks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\DataFlow.Shared.Classes\DataFlow.Shared.Classes.csproj">
+      <Project>{53A40DD4-D79C-4EF1-A350-EE298F23AE8B}</Project>
+      <Name>DataFlow.Shared.Classes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\DataFlow.Shared.Client\DataFlow.Shared.Client.csproj">
+      <Project>{F27C0DF6-93CD-40F9-90E8-1BB1D353B97D}</Project>
+      <Name>DataFlow.Shared.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\DataFlow.Shared.DataExchange\DataFlow.Shared.DataExchange.csproj">
+      <Project>{2A1C9E4C-08A2-4EEE-824A-273C49348D34}</Project>
+      <Name>DataFlow.Shared.DataExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\DataFlow.Shared.Japi\DataFlow.Shared.Japi.csproj">
+      <Project>{83449908-4370-4899-86F1-34F87B6248A0}</Project>
+      <Name>DataFlow.Shared.Japi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\DataFlow.PerfomanceToolkit\DataFlow.PerfomanceToolkit.csproj">
+      <Project>{7C6C77D8-DC10-444E-AAB8-684950689EE8}</Project>
+      <Name>DataFlow.PerfomanceToolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

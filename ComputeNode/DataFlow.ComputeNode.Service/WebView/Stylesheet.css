@@ -1,0 +1,22 @@
+﻿div.outer
+{
+	border-style: solid;
+	border-color: #000000;
+	background-color: #a0FFa0;
+}
+div.header
+{
+	padding: 12px;
+	background-color: #70aF70;
+}
+div.inner
+{
+	padding: 12px;
+}
+span.error
+{
+	color: Red;
+}
+span.label
+{
+}

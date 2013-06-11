@@ -1,0 +1,113 @@
+﻿<PresentationExtensions:AeroWindow x:Class="AISTek.DataFlow.Tools.JobEditor.Views.TaskView"
+                                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                   xmlns:DataModel="clr-namespace:AISTek.DataFlow.Tools.JobEditor.DataModel"
+                                   xmlns:PresentationExtensions="clr-namespace:AISTek.DataFlow.PresentationExtensions;assembly=DataFlow.PresentationExtensions"
+                                   Title="Task"
+                                   Height="426"
+                                   Width="450"
+                                   WindowStartupLocation="CenterScreen"
+                                   Loaded="Window_Loaded"
+                                   ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0"
+                   Grid.Row="0">Task name:</TextBlock>
+        <TextBlock Grid.Column="0"
+                   Grid.Row="1">Task entrypoint:</TextBlock>
+        <TextBlock Grid.Column="0"
+                   Grid.Row="2">Dependencies:</TextBlock>
+        <TextBlock Grid.Column="0"
+                   Grid.Row="3">Input files:</TextBlock>
+        <TextBlock Grid.Column="0"
+                   Grid.Row="4">Output files:</TextBlock>
+
+        <TextBox x:Name="textBoxName"
+                 Grid.Row="0"
+                 Grid.Column="1" />
+        <TextBlock x:Name="textBoxEntrypoint"
+                   Grid.Row="1"
+                   Grid.Column="1" />
+        <Button Grid.Row="1"
+                Grid.Column="2"
+                Style="{DynamicResource ResourceKey=SelectEntrypointButtonStyle}"
+                Click="EditEntryPoint_Click" />
+
+
+        <ListBox x:Name="listDependencies"
+                 Grid.Column="1"
+                 Grid.Row="2"
+                 ItemTemplate="{DynamicResource ResourceKey=TaskRequestTemplate}"
+                 Height="100" />
+        <StackPanel Grid.Column="2"
+                    Grid.Row="2">
+            <Button Style="{DynamicResource ResourceKey=AddDependencyButtonStyle}"
+                    Click="AddDependency_Click">Add</Button>
+            <Button Style="{DynamicResource ResourceKey=RemoveDependencyButtonStyle}"
+                    Click="RemoveDependency_Click">Remove</Button>
+        </StackPanel>
+
+        <ListBox x:Name="listInputFiles"
+                 Grid.Column="1"
+                 Grid.Row="3"
+                 Height="100">
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="{x:Type DataModel:UploadFileRequest}">
+                    <TextBlock Text="{Binding Path=Name}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Column="2"
+                    Grid.Row="3">
+            <Button Style="{DynamicResource ResourceKey=AddFileButtonStyle}"
+                    Click="AddInputFile_Click">Add file</Button>
+            <Button Style="{DynamicResource ResourceKey=RemoveFileButtonStyle}"
+                    Click="RemoveInputFile_Click">Remove</Button>
+        </StackPanel>
+
+        <ListBox x:Name="listOutputFiles"
+                 Grid.Column="1"
+                 Grid.Row="4"
+                 Height="100"
+                 ItemTemplate="{DynamicResource ResourceKey=CreateFileRequestTemplate}" />
+        <StackPanel Grid.Column="2"
+                    Grid.Row="4">
+            <Button Style="{DynamicResource ResourceKey=AddFileButtonStyle}"
+                    Click="AddOutputFile_Click">Add file</Button>
+            <Button Style="{DynamicResource ResourceKey=RemoveFileButtonStyle}"
+                    Click="RemoveOutputFile_Click">Remove</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5"
+                    Grid.Column="0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left">
+            <Button Click="EditParameters_Click"
+                    Width="128">Parameters</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <Button Click="OkButton_Click"                    
+                    Width="64">OK</Button>
+            <Button Click="CancelButton_Click"
+                    Width="64">Cancel</Button>
+        </StackPanel>
+    </Grid>
+</PresentationExtensions:AeroWindow>

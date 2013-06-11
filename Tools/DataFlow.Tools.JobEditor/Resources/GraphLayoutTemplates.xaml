@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:ViewModel="clr-namespace:AISTek.DataFlow.Tools.JobEditor.ViewModel"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <DataTemplate DataType="{x:Type ViewModel:TaskVertex}">
+        <Border BorderBrush="Blue"
+                Background="Gray"
+                BorderThickness="2"
+                CornerRadius="6">
+            <TextBlock Text="{Binding Path=Task.Name, Mode=OneWay}"
+                       ToolTip="{Binding Path=Name, Mode=OneWay}" />
+        </Border>
+    </DataTemplate>
+
+
+</ResourceDictionary>

@@ -1,0 +1,130 @@
+﻿<Window x:Class="AISTek.DataFlow.Tools.LogViewer.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:LogViewer="clr-namespace:AISTek.DataFlow.Tools.LogViewer"
+        Title="AISTek DataFlow Log viewer"
+        Height="356"
+        Width="643"
+        Loaded="Window_Loaded">
+    <Window.CommandBindings>
+        <CommandBinding Command="LogViewer:MainView.ViewEvent"
+                        Executed="ViewEvent_Executed" />
+        <CommandBinding Command="LogViewer:MainView.ViewLogs"
+                        Executed="ViewLogs_Executed" />
+        <CommandBinding Command="LogViewer:MainView.LoadData"
+                        Executed="LoadData_Executed" />
+        <CommandBinding Command="LogViewer:MainView.ClearLogs"
+                        Executed="ClearLogs_Executed" />
+    </Window.CommandBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="24" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    Grid.ColumnSpan="2"
+                    Orientation="Horizontal">
+            <Border x:Name="viewList"
+                    Visibility="Collapsed">
+                <StackPanel Orientation="Horizontal">
+                    <Button Width="128"
+                            Command="LogViewer:MainView.LoadData" 
+                            Content="Update"/>
+                    <Button Width="128"
+                            Command="LogViewer:MainView.ClearLogs"
+                            Content="Clear logs" />
+                    </StackPanel>
+            </Border>
+            <Border x:Name="viewItem"
+                    Visibility="Collapsed">
+                <Button Width="128"
+                        Command="LogViewer:MainView.ViewLogs"
+                        Content="Back"/>
+            </Border>
+        </StackPanel>
+
+        <Border x:Name="container"
+                Grid.Row="1"
+                Grid.ColumnSpan="2">
+        </Border>
+
+        <TextBlock x:Name="status"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   Text="" />
+
+        <ProgressBar x:Name="progressBar"
+                     Grid.Row="2"
+                     Grid.Column="1"
+                     IsIndeterminate="True"
+                     Visibility="Collapsed" />
+
+        <Label x:Name="busy"
+               Grid.Column="0"
+               Grid.Row="0"
+               Grid.ColumnSpan="2"
+               Grid.RowSpan="2"
+               Visibility="Collapsed"
+               Template="{DynamicResource ResourceKey=WaitScreen}">
+            <!--<Label.Template>
+                <ControlTemplate>
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="VisualElement"
+                                                                   Storyboard.TargetProperty="(UIElement.RenderTransform).Angle"
+                                                                   RepeatBehavior="Forever">
+                                        <SplineDoubleKeyFrame KeyTime="0:0:1"
+                                                              Value="360" />
+                                    </DoubleAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                    <Grid Background="White"
+                          Opacity="0.75">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <Storyboard>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="VisualElement"
+                                                                       Storyboard.TargetProperty="(UIElement.RenderTransform).Angle"
+                                                                       RepeatBehavior="Forever">
+                                            <SplineDoubleKeyFrame KeyTime="0:0:1"
+                                                                  Value="360" />
+                                        </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Ellipse Width="25"
+                                 Height="25"
+                                 StrokeThickness="5.5"
+                                 x:Name="VisualElement">
+                            <Ellipse.Stroke>
+                                <LinearGradientBrush EndPoint="0.5,1"
+                                                     StartPoint="0.5,0">
+                                    <GradientStop Color="#FF096475"
+                                                  Offset="0.571" />
+                                    <GradientStop Color="#FFA8FCFC"
+                                                  Offset="1" />
+                                </LinearGradientBrush>
+                            </Ellipse.Stroke>
+                            <Ellipse.RenderTransform>
+                                <RotateTransform CenterX="12.5"
+                                                 CenterY="12.5" />
+                            </Ellipse.RenderTransform>
+                        </Ellipse>
+                    </Grid>
+                </ControlTemplate>
+            </Label.Template>-->
+        </Label>
+    </Grid>
+</Window>

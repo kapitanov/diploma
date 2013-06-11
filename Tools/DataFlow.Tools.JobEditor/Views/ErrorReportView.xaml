@@ -1,0 +1,140 @@
+﻿<PresentationExtensions:AeroWindow x:Class="AISTek.DataFlow.Tools.JobEditor.Views.ErrorReportView"
+                                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                   xmlns:Classes="clr-namespace:AISTek.DataFlow.Shared.Classes;assembly=DataFlow.Shared.Classes"
+                                   xmlns:Controls="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit"
+                                   xmlns:PresentationExtensions="clr-namespace:AISTek.DataFlow.PresentationExtensions;assembly=DataFlow.PresentationExtensions"
+                                   x:Name="This"
+                                   Title="Job failed!"
+                                   WindowStyle="SingleBorderWindow"
+                                   WindowStartupLocation="CenterScreen"
+                                   ResizeMode="CanResizeWithGrip"
+                                   Height="300"
+                                   Width="673">
+
+    <Grid Margin="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24" />
+            <RowDefinition Height="24" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="48" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0"
+               Grid.Row="0"
+               Grid.RowSpan="2"
+               Source="../Resources/JobFailedError.png" />
+
+        <TextBlock Grid.Row="0"
+                   Grid.Column="1">Job name:</TextBlock>
+        <TextBlock Grid.Row="0"
+                   Grid.Column="2"
+                   Text="{Binding This, Path=ErrorReport.JobName}" />
+
+        <TextBlock Grid.Row="1"
+                   Grid.Column="1">Job GUID:
+        </TextBlock>
+        <TextBlock Grid.Row="1"
+                   Grid.Column="2"
+                   Text="{Binding This, Path=ErrorReport.JobId}" />
+
+        <Controls:DataGrid Grid.Row="2"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="3"
+                           ItemsSource="{Binding ElementName=This, Path=ErrorReport.Errors}"
+                           CanUserAddRows="False"
+                           CanUserDeleteRows="False"
+                           CanUserReorderColumns="False"
+                           CanUserSortColumns="False">
+            <Controls:DataGrid.Columns>
+                <Controls:DataGridTemplateColumn Header="Task"
+                                                 Width="Auto">
+                    <Controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="{x:Type Classes:ErrorReport}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Path=Task.Name}" />
+                                <TextBlock Text=" {" />
+                                <TextBlock Text="{Binding Path=Task.Id}" />
+                                <TextBlock Text="}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </Controls:DataGridTemplateColumn.CellTemplate>
+                </Controls:DataGridTemplateColumn>
+
+                <Controls:DataGridTemplateColumn Header="Error source"
+                                                 Width="Auto">
+                    <Controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="{x:Type Classes:ErrorReport}">
+                            <TextBlock Text="{Binding Path=Source}" />
+                        </DataTemplate>
+                    </Controls:DataGridTemplateColumn.CellTemplate>
+                </Controls:DataGridTemplateColumn>
+
+                <Controls:DataGridTemplateColumn Header="Error source"
+                                                 Width="Auto">
+                    <Controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="{x:Type Classes:ErrorReport}">
+                            <StackPanel Orientation="Horizontal"
+                                        Width="512">
+                                <StackPanel.ToolTip>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Row="0"
+                                                   Grid.Column="0"
+                                                   Text="Exception type:" />
+                                        <TextBlock Grid.Row="0"
+                                                   Grid.Column="1"
+                                                   Text="{Binding Path=Error.ExceptionType}" />
+                                        <TextBlock Grid.Row="1"
+                                                   Grid.Column="0"
+                                                   Text="Error message:" />
+                                        <TextBlock Grid.Row="1"
+                                                   Grid.Column="1"
+                                                   Text="{Binding Path=Error.Message}" />
+                                        <TextBlock Grid.Row="2"
+                                                   Grid.Column="0"
+                                                   Text="Error source:" />
+                                        <TextBlock Grid.Row="2"
+                                                   Grid.Column="1"
+                                                   Text="{Binding Path=Error.Source}" />
+                                        <TextBlock Grid.Row="3"
+                                                   Grid.Column="0"
+                                                   Text="Stack trace:" />
+                                        <TextBlock Grid.Row="3"
+                                                   Grid.Column="1"
+                                                   Text="{Binding Path=Error.StackTrace}"
+                                                   TextWrapping="Wrap" />
+                                    </Grid>
+                                </StackPanel.ToolTip>
+                                <TextBlock Text="{Binding Path=Error.ExceptionType}" />
+                                <TextBlock Text=": " />
+                                <TextBlock Text="{Binding Path=Error.Message}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </Controls:DataGridTemplateColumn.CellTemplate>
+                </Controls:DataGridTemplateColumn>
+            </Controls:DataGrid.Columns>
+        </Controls:DataGrid>
+
+        <Button Grid.Row="4"
+                Grid.Column="2"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Margin="8"
+                Click="CloseButton_Click">Close</Button>
+    </Grid>
+</PresentationExtensions:AeroWindow>

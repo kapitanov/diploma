@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://aistek.dataflow/services/scheduler/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="CreateJob">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateJobResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://aistek.dataflow/services/scheduler/" minOccurs="0" name="CreateJobResult" nillable="true" type="q1:Job" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Job">
+    <xs:sequence>
+      <xs:element name="Id" type="ser:guid" />
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://aistek.dataflow/services/scheduler/" name="Tasks" nillable="true" type="q2:ArrayOfTask" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q3="http://aistek.dataflow/services/scheduler/" name="Job" nillable="true" type="q3:Job" />
+  <xs:complexType name="ArrayOfTask">
+    <xs:sequence>
+      <xs:element xmlns:q4="http://aistek.dataflow/services/scheduler/" minOccurs="0" maxOccurs="unbounded" name="Task" nillable="true" type="q4:Task" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q5="http://aistek.dataflow/services/scheduler/" name="ArrayOfTask" nillable="true" type="q5:ArrayOfTask" />
+  <xs:complexType name="Task">
+    <xs:sequence>
+      <xs:element xmlns:q6="http://aistek.dataflow/services/scheduler/" name="EntryPoint" nillable="true" type="q6:EntryPoint" />
+      <xs:element name="Id" type="ser:guid" />
+      <xs:element xmlns:q7="http://aistek.dataflow/services/scheduler/" name="InputFiles" nillable="true" type="q7:ArrayOfFileLink" />
+      <xs:element xmlns:q8="http://aistek.dataflow/services/scheduler/" minOccurs="0" name="Inputs" nillable="true" type="q8:ArrayOfTask" />
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q9="http://aistek.dataflow/services/scheduler/" name="OutputFiles" nillable="true" type="q9:ArrayOfFileLink" />
+      <xs:element xmlns:q10="http://aistek.dataflow/services/scheduler/" minOccurs="0" name="Outputs" nillable="true" type="q10:ArrayOfTask" />
+      <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Parameters" nillable="true" type="q11:ArrayOfKeyValueOfstringstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q12="http://aistek.dataflow/services/scheduler/" name="Task" nillable="true" type="q12:Task" />
+  <xs:complexType name="EntryPoint">
+    <xs:sequence>
+      <xs:element name="AssemblyId" type="ser:guid" />
+      <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="DependentAssemblyIds" nillable="true" type="q13:ArrayOfguid" />
+      <xs:element name="QualifiedClassName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q14="http://aistek.dataflow/services/scheduler/" name="EntryPoint" nillable="true" type="q14:EntryPoint" />
+  <xs:complexType name="ArrayOfFileLink">
+    <xs:sequence>
+      <xs:element xmlns:q15="http://aistek.dataflow/services/scheduler/" minOccurs="0" maxOccurs="unbounded" name="FileLink" nillable="true" type="q15:FileLink" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q16="http://aistek.dataflow/services/scheduler/" name="ArrayOfFileLink" nillable="true" type="q16:ArrayOfFileLink" />
+  <xs:complexType name="FileLink">
+    <xs:sequence>
+      <xs:element name="Id" type="ser:guid" />
+      <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Metadata" nillable="true" type="q17:ArrayOfKeyValueOfstringstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q18="http://aistek.dataflow/services/scheduler/" name="FileLink" nillable="true" type="q18:FileLink" />
+  <xs:element name="OpenJob">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateTask">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://aistek.dataflow/services/scheduler/" minOccurs="0" name="task" nillable="true" type="q19:Task" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateTaskResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateTaskResult" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTask">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="ser:guid" />
+        <xs:element xmlns:q20="http://aistek.dataflow/services/scheduler/" minOccurs="0" name="task" nillable="true" type="q20:Task" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveTask">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartJob">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelJob">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RestartJob">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteJob">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindJobs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindJobsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://aistek.dataflow/services/scheduler/" minOccurs="0" name="FindJobsResult" nillable="true" type="q21:ArrayOfJob" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfJob">
+    <xs:sequence>
+      <xs:element xmlns:q22="http://aistek.dataflow/services/scheduler/" minOccurs="0" maxOccurs="unbounded" name="Job" nillable="true" type="q22:Job" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q23="http://aistek.dataflow/services/scheduler/" name="ArrayOfJob" nillable="true" type="q23:ArrayOfJob" />
+  <xs:element name="GetAllJobs">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllJobsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://aistek.dataflow/services/scheduler/" minOccurs="0" name="GetAllJobsResult" nillable="true" type="q24:ArrayOfJob" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_CurrentJob">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_CurrentJobResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://aistek.dataflow/services/scheduler/" minOccurs="0" name="get_CurrentJobResult" nillable="true" type="q25:Job" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="JobCompleted">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://aistek.dataflow/services/scheduler/" minOccurs="0" name="job" nillable="true" type="q26:Job" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="JobFailed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://aistek.dataflow/services/scheduler/" minOccurs="0" name="job" nillable="true" type="q27:Job" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="AISTek.DataFlow.Tools.LogViewer.ViewLogItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:Controls="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit" xmlns:Xml="clr-namespace:System.Xml;assembly=System.Xml" x:Name="This"
+             mc:Ignorable="d"
+             d:DesignHeight="362"
+             d:DesignWidth="614">
+    <TabControl>
+        <TabItem Header="Summary">
+            <Controls:DataGrid ItemsSource="{Binding ElementName=This, Path=Items, Mode=OneWay}"
+                               AutoGenerateColumns="False">
+                <Controls:DataGrid.Columns>
+                    <Controls:DataGridTextColumn Header="Property"
+                                                 Binding="{Binding Path=Name}"
+                                                 IsReadOnly="True"
+                                                 Width="Auto" />
+                    <!--<Controls:DataGridTextColumn Header="Value"
+                                                 Binding="{Binding Path=Value}"
+                                                 IsReadOnly="True"                                                  
+                                                 Width="Auto">
+                    </Controls:DataGridTextColumn>-->
+                    <Controls:DataGridTemplateColumn Header="Value"
+                                                     IsReadOnly="True"
+                                                     Width="Auto">
+                        <Controls:DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock TextWrapping="Wrap"
+                                           Text="{Binding Path=Value}" />
+                            </DataTemplate>
+                        </Controls:DataGridTemplateColumn.CellTemplate>
+                    </Controls:DataGridTemplateColumn>
+                </Controls:DataGrid.Columns>
+            </Controls:DataGrid>
+        </TabItem>
+        <TabItem Header="Formatted message">
+            <TextBox Text="{Binding ElementName=This, Path=Item.FormattedMessage, Mode=OneWay}"
+                     IsReadOnly="True" />
+        </TabItem>
+        <TabItem  x:Name="xmlViewTab"
+                  Header="Xml view"
+                  Visibility="Collapsed">
+            <TreeView x:Name="xmlTreeView">
+                <TreeView.Resources>
+                    <HierarchicalDataTemplate DataType="{x:Type Xml:XmlNode}">
+                        <TreeViewItem ItemsSource="{Binding Path=ChildNodes}"
+                                      Header="{Binding Path=Name}" />
+                    </HierarchicalDataTemplate>
+                </TreeView.Resources>
+            </TreeView>
+        </TabItem>
+    </TabControl>
+</UserControl>
